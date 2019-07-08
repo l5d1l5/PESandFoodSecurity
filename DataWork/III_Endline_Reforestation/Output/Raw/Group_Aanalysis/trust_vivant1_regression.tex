@@ -1,0 +1,29 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Vivant 1}&\multicolumn{1}{c}{Vivant 1}&\multicolumn{1}{c}{Vivant 1}\\
+\hline
+Level of Trust=4    &      -2.808         &       9.412         &       10.27         \\
+                    &     (6.596)         &     (8.052)         &     (8.040)         \\
+[1em]
+Level of Trust=5    &       11.24         &      -0.708         &       4.868         \\
+                    &     (7.534)         &     (12.30)         &     (13.15)         \\
+[1em]
+No de réunion sur la parcelle en groupe&                     &                     &      -0.913         \\
+                    &                     &                     &     (0.793)         \\
+[1em]
+Constant            &       26.96\sym{***}&       22.69\sym{***}&       27.51\sym{***}\\
+                    &     (5.836)         &     (7.402)         &     (8.469)         \\
+\hline
+Observations        &          61         &          61         &          61         \\
+\(R^{2}\)           &       0.096         &       0.668         &       0.683         \\
+Adjusted \(R^{2}\)  &       0.065         &       0.288         &       0.296         \\
+Bloc fixed effects. &          No         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize }\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

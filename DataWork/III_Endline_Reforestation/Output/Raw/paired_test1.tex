@@ -1,0 +1,16 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{cccccc}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&            &            &            &            &            \\
+                    &         obs&          mu&          se&          sd&           p&       tstat\\
+\hline
+Survival Rate - linear 1&          31&       0.425&       0.053&       0.294&           .&           .\\
+Survival Rate - threshold 1&          31&       0.376&       0.043&       0.238&           .&           .\\
+diff                &          31&       0.049&       0.040&       0.225&       0.235&       1.212\\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Ha: mean(diff) < 0   Pr(T < t) = 0.8825}\\
+\multicolumn{7}{l}{\footnotesize Ha: mean(diff) !=0   Pr(|T| > |t|) = 0.2351}\\
+\multicolumn{7}{l}{\footnotesize Ha: mean(diff) > 0   Pr(T > t) = 0.1175}\\
+\end{tabular}
+}

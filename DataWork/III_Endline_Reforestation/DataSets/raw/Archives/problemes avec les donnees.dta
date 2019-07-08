@@ -1,0 +1,340 @@
+merge2,region,site,bloc,parcelle,nom,prenom,count,sexe,contact,paiement_actual,utilisation1,utilisation2,utilisation3,proportion1,proportion2,proportion3,observation,id_pm
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle BLEU,GNAMBA,BLANI,5,Homme,77558207,4140,Acheter des vivres,Autres dépenses familiales,,60%,40%,,,4
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle BLEU,GUITE,SOUMANA,5,Homme,76380257,4140,Autres dépenses familiales,Acheter des vivres,,90%,10%,,,2
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle BLEU,IRA,LANSANI,5,Homme,77768378,4140,Acheter des vivres,,,100%,,,,1
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle BLEU,ZANTE,LASSINA,5,Homme,66063024,4140,Acheter des vivres,,,100%,,,,5
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle BLEU,ZON,KARAMOGO,5,Homme,76088871,4140,Autres dépenses familiales,Acheter des vivres,,75%,25%,,,3
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle ROUGE,DAO ,AROUNA,5,Homme,77527533,1020,Autres dépenses familiales,,,100%,,,,8
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle ROUGE,GNINASSE,LASSINA,5,Homme,75509095,1020,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,7
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle ROUGE,GORO,OUMAR,5,Homme,74162366,1020,Autres dépenses familiales,,,100%,,,,10
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle ROUGE,GORO,YAYA,5,Homme,77954872,1020,Autres dépenses familiales,,,100%,,,,6
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,KARI,Parcelle ROUGE,TINDE,MODOU,5,Homme,65869331,1020,,,,,,,Absent,9
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle BLEU,BANAO,DAGNON,5,Homme,66621393,1620,Autres dépenses familiales,,,100%,,,,13
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle BLEU,BAYOULE,KOABOLE,5,Homme,74490845,1620,Autres dépenses familiales,,,100%,,,,16
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle BLEU,DAYO,TORON,5,Homme,75601740,1620,Autres dépenses familiales,,,100%,,,,12
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle BLEU,IRA,ZATI,5,Homme,75602087,1620,Autres dépenses familiales,,,100%,,,,14
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle BLEU,TINDE,DADOUIN,5,Homme,76198449,1620,Autres dépenses familiales,,,100%,,,,15
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle ROUGE,BAILOU,GO,5,Homme,76807580,900,Autres dépenses familiales,,,100%,,,,17
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle ROUGE,BAKO,DOUONDIE,5,Homme,74251338,900,Autres dépenses familiales,,,100%,,,,19
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle ROUGE,BLE,YAYA,5,Homme,66950135,900,Autres dépenses familiales,,,100%,,,,20
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle ROUGE,DAYO,GNISSA,5,Homme,75091404,900,Autres dépenses familiales,,,100%,,,,21
+Matched - No problem,BOUCLE DU MOUHOUN,KARI,OULA,Parcelle ROUGE,IRA,SIDIKI,5,Homme,75600512,900,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,18
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle BLEU,BANAO,KATOUGRA,5,Homme,72210645,6000,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,24
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle BLEU,BANAO,SIAKA,5,Homme,61295992,6000,Acheter des intrants agricoles,,,100%,,,,23
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle BLEU,BATIEBO,YOUWARI,5,Homme,75080793,6000,Acheter des intrants agricoles,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,22
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle BLEU,LOUE,BOUBIE,5,Homme,67591709,6000,Acheter des intrants agricoles,,,100%,,,,25
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle BLEU,TIENE,BOUBIER,5,Homme,51400434,6000,Acheter des vivres,,,100%,,,,26
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle ROUGE,BANAO,BEGOUMIN,5,Homme,57640983,6840,Acheter des intrants agricoles,,,100%,,,,28
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle ROUGE,BANAO,CLEMENT,5,Homme,70869403,6840,Acheter des intrants agricoles,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,31
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle ROUGE,BANAO,OURKOI,5,Homme,76729319,6840,Acheter des intrants agricoles,Autres dépenses familiales,,70%,30%,,,29
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle ROUGE,ELLOLA,ABOU,5,Homme,70431536,6840,Acheter des intrants agricoles,,,100%,,,,30
+Matched - No problem,BOUCLE DU MOUHOUN,NOSEBOU,ETOUAYOU,Parcelle ROUGE,SOUGUE,BEDEMIN,5,Homme,61646641,6840,Acheter des vivres,,,100%,,,,27
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle BLEU,BAKO,NEBON,5,Homme,65277647,2640,Acheter des intrants agricoles,,,100%,,,,37
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle BLEU,BASSOUROU,BOUBOU,5,Homme,77977436,2640,Acheter des intrants agricoles,,,100%,,,,36
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle BLEU,SAWADOGO,DRAMANE,5,Homme,75787641,2640,Autres dépenses familiales,,,100%,,,,35
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle BLEU,ZANTE,BELIBIE,5,Homme,,2640,Acheter des intrants agricoles,,,100%,,,,34
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle BLEU,ZANTE,KOFFI,5,Homme,77988959,2640,Acheter des vivres,,,100%,,,,33
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle ROUGE,BAILLOU ,GUEYLE,5,Homme,75107136,3840,Autres dépenses familiales,,,100%,,,,39
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle ROUGE,BAILLOU ,TOAHOU,5,Homme,76165447,3840,Autres dépenses familiales,,,100%,,,,42
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle ROUGE,BAKO,BEWAOTTOU,5,Homme,76346131,3840,Acheter des intrants agricoles,,,100%,,,,38
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle ROUGE,SAWADOGO,BOUREIMA,5,Homme,77957229,3840,Autres dépenses familiales,,,100%,,,,40
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,BANOUBA,Parcelle ROUGE,SAWADOGO,HAMIDOU,5,Homme,65404912,3840,Acheter des intrants agricoles,,,100%,,,,41
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle BLEU,BAGAGNON,FATI,5,Femme,66481939,3000,,,,,,,Absent,47
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle BLEU,BARRY,AMIDOU,5,Homme,61693148,3000,Acheter des vivres,,,100%,,,,44
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle BLEU,BELEM,KARIM,5,Homme,65163148,3000,Acheter des intrants agricoles,,,100%,,,,48
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle BLEU,DABIRE,SALIMATA,5,Femme,55653007,3000,Acheter des intrants agricoles,,,100%,,,,46
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle BLEU,KANZIE,AMINATA,5,Femme,67370141,3000,Faire de l'élevage,,,100%,,,,45
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle ROUGE,BELEM,MADI,5,Homme,76304147,9960,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,49
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle ROUGE,BELEM,SALIF,5,Homme,75995171,9960,Faire de l'élevage,,,100%,,,,51
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle ROUGE,ETIABI,BITINNIN,5,Homme,,9960,Faire de l'élevage,,,100%,,,,53
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle ROUGE,SAWADOGO,ISSOUF,5,Homme,76929385,9960,Faire de l'élevage,,,100%,,,,50
+Matched - No problem,BOUCLE DU MOUHOUN,OUALOU,OUALOU,Parcelle ROUGE,ZANTE,KOLE,5,Homme,76183068,9960,Acheter des vivres,,,100%,,,,52
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle BLEU,ELOLA,ABOU,5,Homme,63837309,3000,Acheter des intrants agricoles,,,100%,,,,55
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle BLEU,ELOLA,YAKOU,5,Homme,61300566,3000,,,,,,,Absent,59
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle BLEU,KO ,LAMINE,5,Homme,70039952,3000,,,,,,,Absent,58
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle BLEU,LOUE,ADAMA,5,Homme,66150905,3000,,,,,,,Absent,57
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle BLEU,NAON,SALIA,5,Homme,73419607,3000,Acheter des intrants agricoles,,,100%,,,,56
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle ROUGE,ELOLA ,ISSA,5,Homme,51696392,9000,,,,,,,Absent,60
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle ROUGE,LOUE,ADAMA,5,Homme,69706721,9000,,,,,,,Absent,63
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle ROUGE,LOUE,NABIA,5,Homme,75766138,9000,Acheter des intrants agricoles,Autres dépenses familiales,,75%,25%,,,62
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle ROUGE,NEO ,DRISSA,5,Homme,76383706,9000,Acheter des intrants agricoles,Acheter des vivres,,50%,50%,,,61
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,BOROMISSI,Parcelle ROUGE,NOBO,DEMASSI,5,Homme,,9000,Acheter des intrants agricoles,,,100%,,,,64
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle BLEU,IVO,KOUNABE,5,Homme,71147791,15240,Autres dépenses familiales,"Réparer son engin de déplacement (moto, vélo)",,60%,40%,,,66
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle BLEU,IVO,YAKOUBA,5,Homme,78785013,15240,,,,,,,Absent,69
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle BLEU,LAZIN,ESIE,5,Homme,62037883,15240,,,,,,,Absent,67
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle BLEU,LOUE,ETUE,5,Femme,55761276,15240,,,,,,,Absent,68
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle BLEU,NEWE,SITA,5,Femme,51999403,15240,,,,,,,Absent,70
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle ROUGE,DAMOUE,CLE,5,Homme,77753067,4620,Acheter des intrants agricoles,,,100%,,,,71
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle ROUGE,SOUGUE,DAMOUPOULE,5,Homme,73479148,4620,Faire de l'élevage,,,100%,,,,72
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle ROUGE,SOUGUE ,ADAMA,5,Homme,63709613,4620,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,75
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle ROUGE,SOUGUE ,SIOU,5,Homme,70640689,4620,Autres dépenses familiales,,,100%,,,,73
+Matched - No problem,BOUCLE DU MOUHOUN,SOROBOULI,SOUHO,Parcelle ROUGE,TOME,SALIF,5,Homme,63200656,4620,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,74
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle BLEU,BAMOUNI,LINWE,5,Homme,69451328,2340,Autres dépenses familiales,,,100%,,,,81
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle BLEU,BANON,BABOU,5,Homme,79660931,2340,,,,,,,Absent,78
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle BLEU,BASSOLE,YOMBIE,5,Homme,74249226,2340,Autres dépenses familiales,,,100%,,,,77
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle BLEU,SANKARA,ABDOULAYE,5,Homme,64352066,2340,Acheter des intrants agricoles,,,100%,,,,79
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle BLEU,SANKARA,OUSMANE,5,Homme,75999301,2340,,,,,,,Absent,80
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle ROUGE,BADOULOU,BITIENE,5,Homme,68032943,3840,Acheter des vivres,,,100%,,,,84
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle ROUGE,BADOULOU,NEBILE,5,Homme,79650283,3840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,82
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle ROUGE,BAKAO,BESSANA,5,Homme,66937553,3840,Acheter des vivres,,,100%,,,,83
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle ROUGE,BAKO,BOUBIE,5,Homme,79771768,3840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,85
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,BISSANDEROU,Parcelle ROUGE,MAGAROU,BATIO,5,Homme,79862887,3840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,86
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle BLEU,BAGNAON,BETIA,5,Homme,74153465,9360,Autres dépenses familiales,Acheter des vivres,,40%,60%,,,92
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle BLEU,BAGNAON,BEVROU,5,Homme,,9360,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,90
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle BLEU,BANAO,ALI,5,Homme,56106571,9360,Acheter des intrants agricoles,,,100%,,,,89
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle BLEU,ZOMA,ALBERT,5,Homme,66400485,9360,Acheter des vivres,,,100%,,,,91
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle BLEU,ZOMA,WEND-NGUDI,5,Homme,56223532,9360,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,,20%,80%,,,88
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle ROUGE,BAKO,BETIA,5,Homme,79640157,7380,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,70%,30%,,,96
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle ROUGE,BANAO,DABA,5,Homme,68824765,7380,Faire de l'élevage,,,100%,,,,95
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle ROUGE,BANAO,DANLOU,5,Homme,68972508,7380,Acheter des vivres,,,100%,,,,93
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle ROUGE,BANAO,SIAKA,5,Homme,68174465,7380,Faire de l'élevage,Autres dépenses familiales,,75%,25%,,,94
+Matched - No problem,BOUCLE DU MOUHOUN,TISSE,DIDIE,Parcelle ROUGE,BATIENE,ROGER,5,Homme,76683497,7380,Faire de l'élevage,,,100%,,,,97
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle BLEU,BAZIE,MICHEL,5,Homme,51455296,900,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,101
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle BLEU,YIRA,KARIM,5,Homme,71419760,900,Acheter des vivres,,,100%,,,,102
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle BLEU,ZANTE,SIAKA,5,Homme,70826942,900,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,103
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle BLEU,ZINA,YACOUBA,5,Homme,69882984,900,Autres dépenses familiales,,,100%,,,,99
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle BLEU,ZON,ADOU,5,Homme,68774330,900,Acheter des vivres,,,100%,,,,100
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle ROUGE,BLA,PASSOUROU,5,Homme,74136477,3720,Acheter des vivres,,,100%,,,,108
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle ROUGE,BLA ,IZON,5,Femme,55135328,3720,Faire de l'élevage,,,100%,,,,106
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle ROUGE,KONE,DEDOUGOU,5,Homme,69715693,3720,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,104
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle ROUGE,SANKARA,DRISSA,5,Homme,70072058,3720,Autres dépenses familiales,,,100%,,,,107
+Matched - No problem,BOUCLE DU MOUHOUN,TOROBA,TOROBA,Parcelle ROUGE,ZALE,AZARA,5,Femme,68352279,3720,Autres dépenses familiales,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,105
+CEMES paiement data only,CENTRE OUEST,NAZINON,GALO,Parcelle BLEU,OUEDRAOGO,TIBO,,Homme,65260589,5520,"Réparer son engin de déplacement (moto, vélo)",Faire de l'élevage,,15%,85%,,,110
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle BLEU,COMPAORE,SAYOUBA,4,Homme,65316886,5520,Faire de l'élevage,,,100%,,,,112
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle BLEU,NACOULMA,OUSSEINI,4,Homme,,5520,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,,20%,80%,,,114
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle BLEU,OUEDRAOGO,TIRAOGO,4,Homme,65792678,5520,Acheter des vivres,,,100%,,,,113
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle BLEU,SIMPORE ,INOUSSA,4,Homme,78533857,5520,Acheter des vivres,,,100%,,,,111
+CEMES paiement data only,CENTRE OUEST,NAZINON,GALO,Parcelle ROUGE,OUEDRAOGO,MATHIAS,,Homme,69800728,4320,Faire de l'élevage,"Réparer son engin de déplacement (moto, vélo)",,70%,30%,,,117
+CEMES paiement data only,CENTRE OUEST,NAZINON,GALO,Parcelle ROUGE,OUEDRAOGO,PASCAL,,Homme,69541020,4320,Acheter des intrants agricoles,Faire de l'élevage,,85%,15%,,,116
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle ROUGE,BOLLY,OUSEINI,3,Homme,76074560,4320,Faire de l'élevage,,,100%,,,,119
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle ROUGE,DIALLO,YACOUBA,3,Homme,67332105,4320,Acheter des vivres,Acheter des médicaments pour se soigner,,80%,20%,,,118
+Matched - No problem,CENTRE OUEST,NAZINON,GALO,Parcelle ROUGE,SAYAGO,ADAMA,3,Homme,76813975,4320,Acheter des vivres,,,100%,,,,115
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle BLEU,KABORE,SEYDOU,5,Homme,74810223,3060,Acheter des vivres,Acheter des médicaments pour se soigner,,60%,40%,,,122
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle BLEU,NIGNA,SEYDOU,5,Homme,77022411,3060,Acheter des médicaments pour se soigner,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,30%,20%,50%,,124
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle BLEU,SIMPORE,YACOUBA,5,Homme,,3060,Acheter des vivres,,,100%,,,,123
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle BLEU,TIENDREBEOGO,HAMADO,5,Homme,65670992,3060,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,,20%,80%,,,121
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle BLEU,TIENDREBEOGO,SEYDOU,5,Homme,74318222,3060,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,90%,10%,,,125
+CEMES paiement data only,CENTRE OUEST,NAZINON,NADONO,Parcelle ROUGE,BARRY,ISSA,,Homme,74316259,10800,Faire de l'élevage,Acheter des vivres,,60%,40%,,,129
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle ROUGE,DIALLO,MOUSSA,4,Homme,65226609,10800,Faire de l'élevage,"Réparer son engin de déplacement (moto, vélo)",,75%,25%,,,127
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle ROUGE,NIGNA,MARTIN,4,Homme,55710572,10800,Autres dépenses familiales,,,100%,,,,126
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle ROUGE,OUEDRAOGO,MOUSSA,4,Homme,,10800,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,85%,15%,,,130
+Matched - No problem,CENTRE OUEST,NAZINON,NADONO,Parcelle ROUGE,TIENDREBEOGO,SALFO,4,Homme,65403935,10800,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,128
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle BLEU,BARRY,SEYDOU,5,Homme,76142976,840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,132
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle BLEU,KAGANBEIGA,PAUL,5,Homme,62905605,840,Acheter des vivres,,,100%,,,,136
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle BLEU,OUEDRAOGO,BENJAMEN,5,Homme,76380346,840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,134
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle BLEU,SANA,BOUREIMA,5,Homme,70560153,840,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,135
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle BLEU,ZOUNDI,HERMANE,5,Homme,71596045,840,Acheter des médicaments pour se soigner,,,100%,,,,133
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle ROUGE,CONGO,RASMANE,5,Homme,70751371,4440,Acheter des vivres,,,100%,,,,138
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle ROUGE,DOAMBA,HAROUNA,5,Homme,75646536,4440,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,139
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle ROUGE,GUIRA,KARIM,5,Homme,68905291,4440,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,141
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle ROUGE,ZOUGRANA,MOUNI,5,Homme,76218487,4440,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,140
+Matched - No problem,CENTRE OUEST,NAZINON,SILIMBA,Parcelle ROUGE,ZOUNDI,JOEL,5,Homme,73975848,4440,"Réparer son engin de déplacement (moto, vélo)",Acheter des médicaments pour se soigner,,30%,70%,,,137
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle BLEU,BASSIAR,B. LAZARE,5,Homme,55470440,2520,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,145
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle BLEU,BAWAR,BOUCCARY,5,Homme,66584052,2520,Acheter des vivres,,,100%,,,,143
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle BLEU,BAWAR,RENE,5,Homme,72135298,2520,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,147
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle BLEU,KANDELE,MARIAM,5,Femme,,2520,Acheter des vivres,Faire de l'élevage,,50%,50%,,,146
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle BLEU,KANDO,SALMATA,5,Femme,62535663,2520,Acheter des vivres,Acheter des habits,,70%,30%,,,144
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle ROUGE,BADO,BOUREIMA,5,Homme,,2640,Acheter des vivres,,,100%,,,,148
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle ROUGE,BADO,GASTON,5,Homme,71601261,2640,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,151
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle ROUGE,BAKO,AMADOU,5,Homme,60059337,2640,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,152
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle ROUGE,KANTIONO,CLEMENCE,5,Femme,72185845,2640,"Acheter des produits cosmétiques (savons, pommades, etc",,,100%,,,,149
+Matched - No problem,CENTRE OUEST,TIOGO,DASSA,Parcelle ROUGE,KANZIE,KADIDIATOU,5,Femme,,2640,"Acheter des produits cosmétiques (savons, pommades, etc",Acheter des vivres,,20%,80%,,,150
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle BLEU,BABINE,BAGNIMBIE,5,Homme,60187153,19560,Acheter des vivres,Faire de l'élevage,,80%,20%,,,157
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle BLEU,BABINE,BOUBIE,5,Homme,61080105,19560,Acheter des intrants agricoles,Acheter des vivres,,40%,60%,,,155
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle BLEU,BADO,AZIZ,5,Homme,60162759,19560,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,Acheter des médicaments pour se soigner,15%,70%,15%,,154
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle BLEU,BADO,YAHAYA,5,Homme,62055497,19560,Faire de l'élevage,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,30%,20%,50%,,153
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle BLEU,BAMOUNI,DIEUDONNE,5,Homme,60695061,19560,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,70%,30%,,,156
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle ROUGE,BADO,BASILOU,5,Homme,65986962,16740,Acheter des intrants agricoles,Acheter des vivres,,40%,60%,,,158
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle ROUGE,BADOLO,BALINMA,5,Homme,73226961,16740,Acheter des vivres,,,100%,,,,161
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle ROUGE,BADOLO,BASSONMA,5,Homme,60303433,16740,Acheter des médicaments pour se soigner,Acheter des vivres,,40%,60%,,,159
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle ROUGE,BAYILI,HAROUNA,5,Homme,61281361,16740,Faire de l'élevage,Acheter des vivres,,40%,60%,,,162
+Matched - No problem,CENTRE OUEST,TIOGO,KYON,Parcelle ROUGE,DANGO,MICHEL,5,Homme,76920052,16740,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",Faire de l'élevage,60%,10%,30%,,160
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle BLEU,BADO,B. BLAISE,5,Homme,70493023,13680,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,163
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle BLEU,BASSIER,DIANE,5,Femme,73365816,13680,Faire de l'élevage,Acheter des vivres,,40%,60%,,,165
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle BLEU,BAYILI,PEMA,5,Homme,70424745,13680,Acheter des vivres,,,100%,,,,164
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle BLEU,KAMOUNI,E. SOLANGE,5,Femme,72307755,13680,"Acheter des produits cosmétiques (savons, pommades, etc",Acheter des vivres,Faire de l'élevage,20%,50%,30%,,166
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle BLEU,KANYAMA,PASCALINE,5,Femme,,13680,Acheter des vivres,Faire de l'élevage,,70%,30%,,,167
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle ROUGE,BADOLO,DENI,5,Homme,62364568,10860,Faire de l'élevage,Acheter des vivres,,30%,70%,,,170
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle ROUGE,BADOLO,FREDERIC,5,Homme,72070311,10860,"Réparer son engin de déplacement (moto, vélo)",Acheter des vivres,,30%,70%,,,169
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle ROUGE,BAZIE,BOUTIO,5,Homme,73948264,10860,Acheter des intrants agricoles,Acheter des vivres,,50%,50%,,,171
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle ROUGE,KAMOUNI,CLARISSE,5,Femme,62840053,10860,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",Faire de l'élevage,50%,20%,30%,,168
+Matched - No problem,CENTRE OUEST,TIOGO,TENADO,Parcelle ROUGE,KANGUIRA,EDWIGE,5,Femme,51675484,10860,Acheter des vivres,Acheter des habits,Faire de l'élevage,40%,20%,40%,,172
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle BLEU,BAKO,ABDOULAYE,5,Homme,73432532,8340,Acheter des médicaments pour se soigner,Acheter des vivres,,30%,70%,,,173
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle BLEU,BAKO,MOUSSA,5,Homme,60855792,8340,Acheter des vivres,,,100%,,,,174
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle BLEU,KAMOUNI,ASMAOH,5,Femme,60720636,8340,Acheter des vivres,Acheter des habits,,60%,40%,,,176
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle BLEU,KAMOUNI,JOCELINE,5,Femme,60304268,8340,Faire de l'élevage,Acheter des vivres,,30%,70%,,,175
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle BLEU,KANDOLO,SALIMATA,5,Femme,71661348,8340,Acheter des vivres,Faire de l'élevage,"Acheter des produits cosmétiques (savons, pommades, etc",60%,25%,15%,,177
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle ROUGE,BAKO,TIDIANE,5,Homme,71008201,15120,Acheter des vivres,"Dépenses scolaires (scolarités, fournitures, etc)",,40%,60%,,,179
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle ROUGE,BAZIE,BOUREIMA,5,Homme,70954840,15120,Acheter des intrants agricoles,Acheter des vivres,,25%,75%,,,180
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle ROUGE,KAKOUAN,RASMATA,5,Femme,63534671,15120,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",Faire de l'élevage,60%,15%,25%,,181
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle ROUGE,KANSOLE,SARATA,5,Femme,61643401,15120,Acheter des vivres,"Dépenses scolaires (scolarités, fournitures, etc)",,50%,50%,,,182
+Matched - No problem,CENTRE OUEST,TIOGO,TIOGO,Parcelle ROUGE,NEBIE,ABOU,5,Femme,71972501,15120,Acheter des vivres,Faire de l'élevage,,80%,20%,,,178
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle BLEU,BARRY,MAMADOU,5,Homme,,7560,Autres dépenses familiales,,,100%,,,,185
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle BLEU,OUALI,AMPOUGOUNI,5,Homme,73308117,7560,Acheter des intrants agricoles,Acheter des vivres,,60%,40%,,,188
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle BLEU,OUALI,BALOU,5,Homme,,7560,Acheter des vivres,,,100%,,,,186
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle BLEU,OUALI,MIYIMBA,5,Homme,,7560,Acheter des vivres,,,100%,,,,184
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle BLEU,OUOBA,YACOUBA,5,Homme,,7560,Acheter des vivres,Acheter des intrants agricoles,,80%,20%,,,187
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle ROUGE,OUALI,KOUNA,5,Homme,72678633,12060,Autres dépenses familiales,Acheter des vivres,,40%,60%,,,192
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle ROUGE,OUALI,SOUALIYI,5,Homme,,12060,Autres dépenses familiales,,,100%,,,,191
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle ROUGE,OUOBA,BELLA,5,Homme,,12060,Autres dépenses familiales,Acheter des intrants agricoles,,70%,30%,,,190
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle ROUGE,OUOBA,KAMPANA,5,Homme,60621632,12060,Acheter des intrants agricoles,Acheter des vivres,Autres dépenses familiales,40%,40%,20%,,193
+Matched - No problem,EST,TAPOABOOPO,KOENA,Parcelle ROUGE,OUOBA,YEMIMPOUNI,5,Homme,,12060,Autres dépenses familiales,,,100%,,,,189
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle BLEU,BARRY,ADOU,5,Homme,60412748,14820,Autres dépenses familiales,Acheter des intrants agricoles,,60%,40%,,,198
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle BLEU,DIALLO,ALY,5,Homme,72191746,14820,Acheter des intrants agricoles,Autres dépenses familiales,,50%,50%,,,194
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle BLEU,TANKOANO,SOULEYMANE,5,Homme,71263880,14820,Acheter des intrants agricoles,,,100%,,,,197
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle BLEU,WOBA,SADOU,5,Homme,62624912,14820,Acheter des intrants agricoles,Acheter des vivres,,75%,25%,,,196
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle BLEU,YONLI,HASANE,5,Homme,61904656,14820,Autres dépenses familiales,,,100%,,,,195
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle ROUGE,LIDO,DRAMANE,5,Homme,60022091,7020,Autres dépenses familiales,Acheter des vivres,,80%,20%,,,201
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle ROUGE,SONDE,DRAMANE,5,Homme,51746421,7020,Acheter des vivres,,,100%,,,,199
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle ROUGE,SONDE,HAMA,5,Homme,61317258,7020,Acheter des intrants agricoles,Autres dépenses familiales,,20%,80%,,,203
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle ROUGE,SONDE,MOUMOUNI,5,Homme,61544512,7020,Acheter des vivres,,,100%,,,,202
+Matched - No problem,EST,TAPOABOOPO,KOGUINI,Parcelle ROUGE,TANKOANO,BOUKARI,5,Homme,70179364,7020,Acheter des intrants agricoles,,,100%,,,,200
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle BLEU,KOULABIGA,TANI,5,Homme,70320775,4260,Autres dépenses familiales,,,100%,,,,205
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle BLEU,LIDO,BRAHIMA,5,Homme,70030908,4260,Autres dépenses familiales,,,100%,,,,207
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle BLEU,LIDO,MAHAMOUDOU,5,Homme,70320711,4260,"Réparer son engin de déplacement (moto, vélo)",,,100%,,,,206
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle BLEU,THIOMBIANO,AMADO,5,Homme,,4260,Autres dépenses familiales,,,100%,,,,204
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle BLEU,THIOMBIANO,MANDJALI,5,Homme,,4260,Autres dépenses familiales,,,100%,,,,208
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle ROUGE,KANDJA,NGOABIH,5,Homme,,3060,Acheter des vivres,,,100%,,,,213
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle ROUGE,NADJOURI,GUEREMI,5,Homme,72804513,3060,Autres dépenses familiales,,,100%,,,,211
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle ROUGE,OUALI,AHADI,5,Homme,70311067,3060,Autres dépenses familiales,,,100%,,,,212
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle ROUGE,SANGNA,DJIBRIL,5,Homme,70665516,3060,Autres dépenses familiales,,,100%,,,,209
+Matched - No problem,EST,TAPOABOOPO,MATIACOALI,Parcelle ROUGE,SONDE,TIAYELI,5,Homme,70792517,3060,Acheter des vivres,,,100%,,,,210
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle BLEU,DIALLO,ISSA,5,Homme,62528113,24060,Autres dépenses familiales,,,100%,,,,217
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle BLEU,DICKO,MIKELI,5,Homme,70964343,24060,Acheter des vivres,Acheter des intrants agricoles,,50%,50%,,,214
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle BLEU,SONDE,ISSA,5,Homme,72758044,24060,Acheter des vivres,,,100%,,,,216
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle BLEU,TANKOANO,TENIYAGIBA,5,Homme,,24060,Acheter des intrants agricoles,,,100%,,,,215
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle BLEU,THIOMBIANO,DJADA,5,Homme,66140103,24060,Acheter des vivres,Acheter des intrants agricoles,,50%,50%,,,218
+CEMES paiement data only,EST,TAPOABOOPO,NANSOUGOU,Parcelle ROUGE,IDOUNI,MINYEMBA,,Homme,70643403,7500,Acheter des intrants agricoles,,,100%,,,,223
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle ROUGE,SININI,KOOMA,4,Homme,72238189,7500,Autres dépenses familiales,,,100%,,,,221
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle ROUGE,SININI,MEDIEMPO,4,Homme,70805385,7500,Acheter des intrants agricoles,,,100%,,,,220
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle ROUGE,TANKOANO,MONO,4,Homme,70128920,7500,Acheter des vivres,,,100%,,,,219
+Matched - No problem,EST,TAPOABOOPO,NANSOUGOU,Parcelle ROUGE,THIOMBIANO,SOUMPA,4,Homme,70046403,7500,Autres dépenses familiales,,,100%,,,,222
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle BLEU,SAWADOGO,AMADOU,5,Homme,,11400,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,226
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle BLEU,SAWADOGO,OUMAROU,5,Homme,,11400,Acheter des vivres,Acheter des intrants agricoles,,60%,40%,,,224
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle BLEU,TANKOANO,GOABILI,5,Homme,70327229,11400,Acheter des vivres,,,100%,,,,227
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle BLEU,THIOMBIANO,DJANIAGOU,5,Homme,,11400,Acheter des intrants agricoles,Acheter des vivres,,50%,50%,,,225
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle BLEU,THIOMBIANO,SOUALIYE,5,Homme,,11400,Autres dépenses familiales,Acheter des vivres,,40%,60%,,,228
+CEMES paiement data only,EST,TAPOABOOPO,OUGAROU,Parcelle ROUGE,COMBARI,AHADI,,Homme,,6540,Acheter des vivres,Acheter des intrants agricoles,,70%,30%,,,230
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle ROUGE,COMBARI,BAYALA,4,Femme,,6540,Acheter des vivres,Acheter des intrants agricoles,,50%,50%,,,229
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle ROUGE,KANDJA,DJAGNIGA,4,Homme,,6540,Acheter des vivres,Autres dépenses familiales,,80%,20%,,,231
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle ROUGE,TANKOANO,FRANCOIS,4,Homme,72136805,6540,Autres dépenses familiales,Acheter des vivres,,30%,70%,,,232
+Matched - No problem,EST,TAPOABOOPO,OUGAROU,Parcelle ROUGE,TOURE,ABDOULAYE,4,Homme,60051840,6540,Acheter des vivres,,,100%,,,,233
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle BLEU,AOUALI,MARCELIN,5,Homme,70337557,5760,Autres dépenses familiales,,,100%,,,,236
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle BLEU,OUALI,BILIMPO,5,Homme,71516007,5760,Acheter des vivres,,,100%,,,,234
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle BLEU,OUALI,SOANDANLA,5,Homme,72896926,5760,Autres dépenses familiales,,,100%,,,,238
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle BLEU,SONDE,BOUBACAR,5,Homme,70612193,5760,Acheter des intrants agricoles,,,100%,,,,237
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle BLEU,SONDE,HAWDI,5,Homme,70817416,5760,Acheter des vivres,,,100%,,,,235
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle ROUGE,COMBARI,HOMPOUGNIE,5,Homme,61157055,7860,Acheter des vivres,Autres dépenses familiales,,80%,20%,,,242
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle ROUGE,OUALI,MOAGOULBA,5,Homme,61274279,7860,Acheter des vivres,,,100%,,,,240
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle ROUGE,OUALI,YENINTIEDIBA,5,Homme,72355124,7860,Acheter des vivres,,,100%,,,,239
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle ROUGE,OUOBA,LIGOUABLI MINAMBA,5,Homme,73047601,7860,Acheter des intrants agricoles,,,100%,,,,241
+Matched - No problem,EST,TAPOABOOPO,SAKOANIE,Parcelle ROUGE,OUOBA,YEMBOADO JEAN,5,Homme,71723911,7860,Acheter des intrants agricoles,,,100%,,,,243
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle BLEU,LOMPO,OUNTIEDI,5,Homme,,18000,Autres dépenses familiales,Acheter des vivres,,70%,30%,,,244
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle BLEU,OUOBA,BEDARI,5,Homme,,18000,Acheter des vivres,Acheter des intrants agricoles,,70%,30%,,,245
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle BLEU,OUOBA,EDOUARD,5,Homme,,18000,Acheter des vivres,Autres dépenses familiales,,50%,50%,,,246
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle BLEU,TANKOANO,BANIPO,5,Homme,,18000,Acheter des vivres,,,100%,,,,247
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle BLEU,TANKOANO,YEMPAGOU,5,Homme,71721256,18000,Acheter des vivres,Acheter des intrants agricoles,,50%,50%,,,248
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle ROUGE,COMBARI,YEMPAGOU,5,Homme,,5220,Acheter des vivres,"Réparer son engin de déplacement (moto, vélo)",,60%,40%,,,253
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle ROUGE,OUALI,FOLDJALI,5,Homme,,5220,Acheter des intrants agricoles,,,100%,,,,250
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle ROUGE,OUOBA,KANYOPALI,5,Homme,,5220,Autres dépenses familiales,,,100%,,,,249
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle ROUGE,TANKOANO,AIGUIE,5,Homme,,5220,Acheter des vivres,Autres dépenses familiales,,80%,20%,,,251
+Matched - No problem,EST,TAPOABOOPO,TCHALBONGA,Parcelle ROUGE,TANKOANO,SUGLIMPO,5,Homme,,5220,Acheter des intrants agricoles,,,100%,,,,252
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle BLEU,OUOBA,BOUREIMA,5,Homme,60936074,25620,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,255
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle BLEU,SONDE,OUMAROU,5,Homme,72981284,25620,Acheter des intrants agricoles,,,100%,,,,256
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle BLEU,TANKOANO,MALDJOA,5,Homme,71850587,25620,Acheter des intrants agricoles,,,100%,,,,254
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle BLEU,YONLI,MALDJOA,5,Homme,63262542,25620,Acheter des intrants agricoles,Acheter des vivres,,50%,50%,,,258
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle BLEU,ZORE,OUSMANE,5,Homme,70790497,25620,Acheter des intrants agricoles,Autres dépenses familiales,,50%,50%,,,257
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle ROUGE,BANDE,HAMA TAUWALI,5,Homme,,5580,Acheter des intrants agricoles,,,100%,,,,260
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle ROUGE,LOMPO,TENILABA,5,Homme,73049911,5580,Autres dépenses familiales,,,100%,,,,262
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle ROUGE,OUOBA,SALOU,5,Homme,62465161,5580,Acheter des vivres,,,100%,,,,263
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle ROUGE,SONDE,SOUMANA,5,Homme,60412849,5580,Acheter des intrants agricoles,,,100%,,,,259
+Matched - No problem,EST,TAPOABOOPO,TOABILI,Parcelle ROUGE,TANKOANO,MOUSSA,5,Homme,73931121,5580,Autres dépenses familiales,,,100%,,,,261
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle BLEU,DIBLONI,EVELYNE,5,Femme,,4740,Acheter des vivres,,,100%,,,,265
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle BLEU,DIBLONI,JACQUELINE,5,Femme,,4740,Acheter des vivres,,,100%,,,,267
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle BLEU,DIBLONI,JOSEPH,5,Femme,73476871,4740,Acheter des vivres,Autres dépenses familiales,,90%,10%,,,268
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle BLEU,DIBLONI,MICHAEL,5,Homme,,4740,Acheter des habits,Autres dépenses familiales,,90%,10%,,,264
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle BLEU,KAMBIRE,DEBIE,5,Homme,75967226,4740,Acheter des intrants agricoles,Autres dépenses familiales,,90%,10%,,,266
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle ROUGE,DIBLONI,OLLO LAURENT,5,Homme,,10560,Faire de l'élevage,Acheter des intrants agricoles,,60%,40%,,,272
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle ROUGE,DIBLONI,OLLO LUC,5,Homme,,10560,Faire de l'élevage,Acheter des intrants agricoles,,70%,30%,,,269
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle ROUGE,PALE,CHRISTINE,5,Femme,,10560,Acheter des vivres,Acheter des habits,,60%,40%,,,273
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle ROUGE,PALE,S. MATHIEU,5,Homme,73475708,10560,Acheter des vivres,Autres dépenses familiales,,85%,15%,,,271
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BARO,Parcelle ROUGE,PODA,SINGOTE,5,Homme,64831789,10560,Autres dépenses familiales,Acheter des habits,,75%,25%,,,270
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle BLEU,DAH,AMBROISE,5,Homme,72458526,7320,Acheter des intrants agricoles,Acheter des habits,,60%,40%,,,275
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle BLEU,DOLLY,ETIENNE,5,Homme,76875204,7320,"Acheter des produits cosmétiques (savons, pommades, etc",Autres dépenses familiales,,50%,50%,,,278
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle BLEU,DOLLY,SAMY,5,Homme,75091800,7320,Faire de l'élevage,Autres dépenses familiales,,85%,15%,,,277
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle BLEU,KAMBOU,JACOB,5,Homme,68053221,7320,Faire de l'élevage,Autres dépenses familiales,,85%,15%,,,274
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle BLEU,OUSSE,THIKIMTE,5,Homme,76459296,7320,Acheter des habits,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,276
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle ROUGE,DAH,BEBE SYLVAIN,5,Homme,75993291,9120,Faire de l'élevage,Autres dépenses familiales,,90%,10%,,,281
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle ROUGE,KAMBIRE,JONAS,5,Homme,65674935,9120,Autres dépenses familiales,"Acheter des produits cosmétiques (savons, pommades, etc",,90%,10%,,,282
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle ROUGE,KAMBIRE,SIE DAVID,5,Homme,62358549,9120,Acheter des intrants agricoles,Faire de l'élevage,,75%,25%,,,280
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle ROUGE,KAMBIRE,WOLOSSANTE,5,Homme,73750021,9120,Acheter des intrants agricoles,,,100%,,,,279
+Matched - No problem,SUD OUEST,BONTIOLI RFP,BOUROUM,Parcelle ROUGE,KAMBOU,OLLO CLEMENT,5,Homme,73504270,9120,Acheter des intrants agricoles,,,100%,,,,283
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle BLEU,DAH,BALEMIRRNAME,5,Femme,,10020,Acheter des vivres,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,289
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle BLEU,DAH,HANDORNA,5,Femme,,10020,Faire de l'élevage,Acheter des habits,,90%,10%,,,285
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle BLEU,DAH,IRTEOLA,5,Femme,,10020,Autres dépenses familiales,"Acheter des produits cosmétiques (savons, pommades, etc",,75%,25%,,,286
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle BLEU,DAH,KOUVIYIRE,5,Homme,76747172,10020,"Dépenses scolaires (scolarités, fournitures, etc)",,,100%,,,,287
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle BLEU,DAH,TOEBARAN,5,Femme,,10020,Acheter des vivres,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,288
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle ROUGE,DAH,BALYEROUBO,5,Femme,,7380,Acheter des vivres,Autres dépenses familiales,,90%,10%,,,293
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle ROUGE,DAH,BORBAGADAN,5,Femme,,7380,Faire de l'élevage,Autres dépenses familiales,,75%,25%,,,292
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle ROUGE,DAH,FAYIRENAMI,5,Femme,,7380,Acheter des vivres,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,291
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle ROUGE,DAH,HELENE,5,Femme,,7380,Acheter des habits,Acheter des vivres,,75%,25%,,,294
+Matched - No problem,SUD OUEST,BONTIOLI RFP,HEMKOA,Parcelle ROUGE,DAH,KGOGATE,5,Homme,78667815,7380,Faire de l'élevage,"Acheter des produits cosmétiques (savons, pommades, etc",,70%,30%,,,290
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle BLEU,DABIRE,BAYIMANA,5,Femme,74337143,18000,Autres dépenses familiales,Faire de l'élevage,,75%,25%,,,295
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle BLEU,DOLLI,B.DANIEL,5,Homme,71184465,18000,Acheter des intrants agricoles,,,100%,,,,296
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle BLEU,DOLLI,INTO,5,Homme,77154977,18000,Acheter des intrants agricoles,Autres dépenses familiales,,90%,10%,,,297
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle BLEU,KAMBIRE,TOMAYTOU,5,Homme,,18000,Faire de l'élevage,Acheter des habits,,60%,40%,,,299
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle BLEU,KANSIE,DOUWALE,5,Homme,,18000,Acheter des intrants agricoles,,,100%,,,,298
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle ROUGE,DOLLI,PALIMNE,5,Homme,51841768,2940,"Réparer son engin de déplacement (moto, vélo)",Autres dépenses familiales,,90%,10%,,,300
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle ROUGE,KANSIE,GANDAYABOU,5,Homme,72032479,2940,Acheter des habits,Autres dépenses familiales,,80%,20%,,,302
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle ROUGE,KANSIE,KAKANTE,5,Homme,,2940,Faire de l'élevage,Autres dépenses familiales,,90%,10%,,,303
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle ROUGE,KANSIE,OHO,5,Femme,72354494,2940,Acheter des vivres,Acheter des habits,,85%,15%,,,304
+Matched - No problem,SUD OUEST,BONTIOLI RFP,TIANKOURA,Parcelle ROUGE,SOME,NAWINKOU,5,Homme,71692040,2940,Acheter des vivres,Autres dépenses familiales,,90%,10%,,,301
+Original Data Only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,KAMBIRE,DOMIN YIRE,5,,,,,,,,,,,
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,PODA,SANYAOUFOU,,Homme,70714998,20040,Acheter des intrants agricoles,Autres dépenses familiales,,80%,20%,,,305
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,DABIRE,DOMINNE,5,Homme,,20040,Acheter des intrants agricoles,"Dépenses scolaires (scolarités, fournitures, etc)",,75%,25%,,,309
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,SOMDA,CELESTIN,5,Homme,78028324,20040,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,306
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,SOMDA,YI SOO,5,Homme,,20040,Acheter des intrants agricoles,,,100%,,,,307
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle BLEU,SOME,BERGUIRE,5,Homme,72836573,20040,Acheter des intrants agricoles,Faire de l'élevage,,75%,25%,,,308
+Original Data Only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOMDA ,BEHINIR,5,,,,,,,,,,,
+Original Data Only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOMDA ,BIEBE DONSAN,5,,,,,,,,,,,
+Original Data Only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOME ,NONNINON,5,,,,,,,,,,,
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOMDA,BEHINIR,,Homme,77418276,14880,Faire de l'élevage,Acheter des intrants agricoles,,50%,50%,,,311
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOMDA,BIEBE DONSAN,,Homme,72897651,14880,Autres dépenses familiales,Acheter des intrants agricoles,,70%,30%,,,310
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,SOME,NONNINON,,Homme,,14880,Autres dépenses familiales,"Réparer son engin de déplacement (moto, vélo)",,80%,20%,,,312
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,DABIRE,KALICE,5,Homme,79316272,14880,Acheter des intrants agricoles,,,100%,,,,313
+Matched - No problem,SUD OUEST,BONTIOLI RT,BONTIOLI,Parcelle ROUGE,PODA,NOUON,5,Femme,77036882,14880,Autres dépenses familiales,Faire de l'élevage,,50%,50%,,,314
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle BLEU,DAH,BIA YMEN,5,Homme,,1260,Autres dépenses familiales,,,100%,,,,318
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle BLEU,DAH,DAA,5,Homme,73707336,1260,Acheter des habits,,,100%,,,,317
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle BLEU,DAH,TOU NOU,5,Homme,,1260,Acheter des habits,,,100%,,,,316
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle BLEU,DAH,YI MAN ZOU MON,5,Homme,,1260,Acheter des habits,,,100%,,,,315
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle BLEU,SOME,BO LOUN MOUON,5,Homme,52329298,1260,Autres dépenses familiales,,,100%,,,,319
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle ROUGE,DAH,DEGOU,5,Homme,56202673,10020,Acheter des intrants agricoles,,,100%,,,,323
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle ROUGE,DAH,HANIGMA,5,Homme,61195565,10020,Acheter des intrants agricoles,,,100%,,,,324
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle ROUGE,DAH,KOUMBOUALAUA,5,Homme,61967389,10020,Faire de l'élevage,Acheter des habits,,65%,35%,,,320
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle ROUGE,HIEN ,TIERBA,5,Homme,71306187,10020,"Dépenses scolaires (scolarités, fournitures, etc)",Acheter des habits,,50%,50%,,,321
+Matched - No problem,SUD OUEST,BONTIOLI RT,DANKOTNAZOU,Parcelle ROUGE,SOME,ARIGBE,5,Homme,61888817,10020,Faire de l'élevage,Autres dépenses familiales,,75%,25%,,,322
+Original Data Only,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,PODA,ANICET,5,,,,,,,,,,,
+Original Data Only,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,SOME,JUSTIN,5,,,,,,,,,,,
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,PODA,DIEUDONNE,,Homme,55502272,19020,Acheter des intrants agricoles,Acheter des vivres,,80%,20%,,,326
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,PODA,RAOUL,,Homme,69780729,19020,Faire de l'élevage,Acheter des intrants agricoles,,75%,25%,,,328
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,DABIRE,CLEMENT,5,Homme,78439028,19020,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,329
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,MEDA,PARFAIT,5,Homme,79707589,19020,Autres dépenses familiales,Acheter des habits,,75%,25%,,,327
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle BLEU,PODA,THEOPHILE,5,Homme,69104464,19020,Acheter des intrants agricoles,Faire de l'élevage,,85%,15%,,,330
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle ROUGE,DABIRE,SERAPHIN,5,Homme,63889512,13100,Autres dépenses familiales,Faire de l'élevage,,75%,25%,,,332
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle ROUGE,HIEN,PREBERE,5,Homme,68216680,13100,Acheter des vivres,"Acheter des produits cosmétiques (savons, pommades, etc",,80%,20%,,,333
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle ROUGE,SOMDA ,KOUMNOMME,5,Homme,,13100,Acheter des médicaments pour se soigner,Acheter des intrants agricoles,,50%,50%,,,335
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle ROUGE,SOME,APPOLINAIRE,5,Homme,68904415,13100,Autres dépenses familiales,Acheter des intrants agricoles,,30%,70%,,,331
+Matched - No problem,SUD OUEST,BONTIOLI RT,TOVOR,Parcelle ROUGE,SOME,JOEL,5,Homme,78580453,13100,Acheter des intrants agricoles,Faire de l'élevage,,75%,25%,,,334
+Original Data Only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,HIEN,ZIEM,5,,,,,,,,,,,
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,DABIRE,GNINEMAYI,,Homme,,6420,Acheter des vivres,Autres dépenses familiales,,90%,10%,,,337
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,HIEN,ANONNEME,5,Homme,,6420,Acheter des intrants agricoles,,,100%,,,,336
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,KAMBIRE,YIMAN,5,Homme,,6420,Acheter des intrants agricoles,,,100%,,,,340
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,SOMDA,POUTIEROUWE,5,Homme,,6420,Faire de l'élevage,Acheter des intrants agricoles,,50%,50%,,,339
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle BLEU,SOME,KOUMBETIEHO,5,Homme,,6420,Faire de l'élevage,"Acheter des produits cosmétiques (savons, pommades, etc",,70%,30%,,,338
+Original Data Only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,SOMDA,M. FLORENT,5,,,,,,,,,,,
+Original Data Only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,SOME,POLEON,5,,,,,,,,,,,
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,PODA,BALZAOL,,Homme,71318521,8100,Acheter des intrants agricoles,Autres dépenses familiales,,60%,40%,,,345
+CEMES paiement data only,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,SOMDA,NIFASSOA,,Homme,,8100,Acheter des médicaments pour se soigner,Acheter des habits,,50%,50%,,,344
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,MEDA,SANSANWYIRBE,5,Homme,,8100,Acheter des intrants agricoles,,,100%,,,,341
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,PODA,BEDAWYANR,5,Homme,,8100,Acheter des vivres,Autres dépenses familiales,,65%,35%,,,343
+Matched - No problem,SUD OUEST,BONTIOLI RT,ZAMBO,Parcelle ROUGE,PODA,YIRBETOURE,5,Homme,72504387,8100,Acheter des vivres,Acheter des intrants agricoles,,70%,30%,,,342

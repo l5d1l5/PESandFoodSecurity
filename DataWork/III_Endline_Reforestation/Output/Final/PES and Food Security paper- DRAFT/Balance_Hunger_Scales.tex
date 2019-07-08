@@ -1,0 +1,33 @@
+%%% Table created in Stata by iebaltab (https://github.com/worldbank/ietoolkit)
+
+\documentclass{article}
+
+% ----- Preamble 
+\usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+% ----- End of preamble 
+
+ \begin{document}
+
+\begin{table}[!htbp]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc}
+\\[-1.8ex]\hline \hline \\[-1.8ex]
+  & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(3)} & \multicolumn{1}{c}{T-test}  \\
+ & \multicolumn{2}{c}{Treatment}  & \multicolumn{2}{c}{Control}  & \multicolumn{2}{c}{Total}  & \multicolumn{1}{c}{Difference}  \\
+  Variable & N & Mean/SE  & N & Mean/SE  & N & Mean/SE   & (1)-(2)  \\ \hline \\[-1.8ex] 
+Household Hunger Scale (HHS) & 295 & \begin{tabular}[t]{@{}c@{}} 0.156 \\ (0.031) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 0.349 \\ (0.046) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 0.246 \\ (0.027) \end{tabular} &    -0.193*** \rule{0pt}{0pt}\\
+HHS Categorical Indicator & 295 & \begin{tabular}[t]{@{}c@{}} 1.037 \\ (0.011) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 1.123 \\ (0.020) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 1.077 \\ (0.011) \end{tabular} &    -0.085*** \rule{0pt}{3ex}\\
+HHScat == little/no hunger & 295 & \begin{tabular}[t]{@{}c@{}} 0.963 \\ (0.011) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 0.877 \\ (0.020) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 0.923 \\ (0.011) \end{tabular} &     0.085*** \rule{0pt}{3ex}\\
+HHScat == moderate hunger & 295 & \begin{tabular}[t]{@{}c@{}} 0.037 \\ (0.011) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 0.123 \\ (0.020) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 0.077 \\ (0.011) \end{tabular} &    -0.085*** \rule{0pt}{3ex}\\
+Household Food Insecurity Access Scale (HFIAS) & 295 & \begin{tabular}[t]{@{}c@{}} 0.925 \\ (0.110) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 1.529 \\ (0.136) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 1.209 \\ (0.087) \end{tabular} &    -0.603*** \rule{0pt}{3ex}\\
+Household Food Insecurity Access Prevalence (HFIAP) - cat & 295 & \begin{tabular}[t]{@{}c@{}} 1.498 \\ (0.054) \end{tabular} & 261 & \begin{tabular}[t]{@{}c@{}} 1.851 \\ (0.072) \end{tabular} & 556 & \begin{tabular}[t]{@{}c@{}} 1.664 \\ (0.045) \end{tabular} &    -0.352*** \rule{0pt}{3ex}\\
+\hline \hline \\[-1.8ex]
+%%% This is the note. If it does not have the correct margins, edit text below to fit to table size.
+\multicolumn{8}{@{}p{1\textwidth}}
+{\textit{Notes}:  The value displayed for t-tests are the differences in the means across the groups. ***, **, and * indicate significance at the 1, 5, and 10 percent critical level. }
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\end{document}
