@@ -187,7 +187,7 @@
    **Set the locals corresponding to the taks you want
    * run to 1. To not run a task, set the local to 0.
    local importDo       0
-   local cleaningDo     1
+   local cleaningDo     0
    local constructDo    1
    local analysisDo     1
 
