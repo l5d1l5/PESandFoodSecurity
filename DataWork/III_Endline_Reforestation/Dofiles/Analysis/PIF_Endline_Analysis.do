@@ -30,6 +30,9 @@
 	
 
 */
+
+
+if (0)  {
 ********************************************************************************
 * SECTION A:  Identification du participant 			   					   *
 ********************************************************************************
@@ -559,60 +562,7 @@
 	
 	* Transform and graph "food security levels"
 
-	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
-	
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
-		keep if serge1==3		
-		
-		keep if treatment==0
-	
-	
-	foreach month in  oct nov dec {
-		rename 	`month'_2017 year2017_`month'
-		}
-	
-	
-	foreach month in jan feb mar april may june jul aug sept  {					 
-		rename 	`month'_2018 year2018_`month'
-		}
-	
-	rename year2018_jan		year2018_4		
-	rename year2018_feb		year2018_5
-	rename year2018_mar		year2018_6
-	rename year2018_april	year2018_7
-	rename year2018_may		year2018_8
-	rename year2018_june	year2018_9
-	rename year2018_jul		year2018_10
-	rename year2018_aug		year2018_11
-	rename year2018_sept	year2018_12
-	rename year2017_oct		year2017_1
-	rename year2017_nov		year2017_2	
-	rename year2017_dec		year2017_3
-			
-			
-	reshape long year2017_ year2018_, i(hhid) j(month)
- 	
-	replace 	 year2018_ = year2017_ 		if year2018_ == . & year2017_ !=.
-	
-	* Bar graph	
-	global graph_bar bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
-					   ylab(,angle(0) ) title(, justification(left) color(black) span pos(11)) subtitle(, justification(left) color(black))		
-	
-	
-	
-	graph bar year2018_, over(month, 	///
-						 relabel(1 "Oct"  2 "Nov" 3 "Dec"  4 "Jan" 5 "Feb" 6	"Mar" 7	"Apr"   					///
-								 8 "May"  9	"Jun"  10 "Jul" 	11  "Aug"  12  "Sept" ))							///
-						 ytitle("Percent")										///
-						 blabel(bar, format(%9.1f) lstyle(solid) lc(black) color(black) size(vsmall)) 	bargap(10) 			///
-						 $graph_bar
-	gr export "$EDLREFOR_outFin/PES_paper/FoodInsecure_bymonth_bars.eps",  replace	
+
 	
 	
 			
@@ -1618,7 +1568,8 @@
 	
 	
 	
-	
+}
+*	
 	
 	
 	
@@ -1627,18 +1578,272 @@
 ********************************************************************************
 ********************************************************************************
 
+* REPLICATION CODES FOR ADJOGNON ET AL. (2019, FORTHCOMING)	
+
+********************************************************************************
+
+	/* The following codes replicate exactly each of the graphs and tables
+		as they appear in the above referenced paper  */
+
+
+	* FIGURE 1: SEASONALITY OF FOOD INSECURITY (OCT 17 TO SEPT 18)
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
+				keep if serge1==3		
+				
+				keep if treatment==0
+			
+			
+			foreach month in  oct nov dec {
+				rename 	`month'_2017 year2017_`month'
+				}
+			
+			
+			foreach month in jan feb mar april may june jul aug sept  {					 
+				rename 	`month'_2018 year2018_`month'
+				}
+			
+			rename year2018_jan		year2018_4		
+			rename year2018_feb		year2018_5
+			rename year2018_mar		year2018_6
+			rename year2018_april	year2018_7
+			rename year2018_may		year2018_8
+			rename year2018_june	year2018_9
+			rename year2018_jul		year2018_10
+			rename year2018_aug		year2018_11
+			rename year2018_sept	year2018_12
+			rename year2017_oct		year2017_1
+			rename year2017_nov		year2017_2	
+			rename year2017_dec		year2017_3
+					
+					
+			reshape long year2017_ year2018_, i(hhid) j(month)
+			
+			replace 	 year2018_ = year2017_ 		if year2018_ == . & year2017_ !=.
+			
+			* Bar graph	
+			global graph_bar bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+							   ylab(,angle(0) ) title(, justification(left) color(black) span pos(11)) subtitle(, justification(left) color(black))		
+			
+			
+			
+			graph bar year2018_, over(month, 	///
+								 relabel(1 "Oct"  2 "Nov" 3 "Dec"  4 "Jan" 5 "Feb" 6	"Mar" 7	"Apr"   					///
+										 8 "May"  9	"Jun"  10 "Jul" 	11  "Aug"  12  "Sept" ))							///
+								 ytitle("Percent")										///
+								 blabel(bar, format(%9.1f) lstyle(solid) lc(black) color(black) size(vsmall)) 	bargap(10) 			///
+								 $graph_bar
+			gr export "$EDLREFOR_outFin/PES_paper/FoodInsecure_bymonth_bars.eps",  replace		
+	
 	
 		
 	
+	* FIGURE 2: TIMELINE OF THE RANDOMIZED CONTROLLED TRIAL
+	
+			* See the tikz file in overleaf
 	
 	
 	
+	* TABLE 1: BALANCE TABLE: BASELINE CHARACTERISTICS
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", clear
+				drop age female 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						keepusing (FoodExp_base LFoodExp_base HDDS_base)
+
+				 
+				* Balance characteristics - Baseline
+
+				iebaltab  	age female farmer Lrevenu1     								 ///
+							Lrevenu_tot sec_activity married       						 ///
+							hsize schooling       										 ///
+							GGF_member dist_far  										 ///
+							asset_agr_index asset_hh_index  							 ///
+							lanholdings land_cultivated   								 ///
+							FoodExp_base LFoodExp_base HDDS_base, 						 ///
+							grpvar(statut) order(1 0)									 ///
+							savetex("$EDLREFOR_outFin/delete_me.tex") 	  				 ///
+							tblnote("") texnotewidth(2)								 	 ///
+							total rowvarlabels pftest   								 ///
+							ftest  fmissok												 ///
+							replace
+				
+				filefilter "$EDLREFOR_outFin/delete_me.tex" "$EDLREFOR_outFin/PES_paper/Balancing_tests.tex",        ///                                                          
+							from("/BShline") to("/BScline{1-8}") replace  	 					
+					
+	
+
+	* TABLE 2: BALANCE TABLE: ATTRITION AND CHARACTERISITICS OF THE ENDLINE SAMPLE
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", clear
+				drop age female 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						keepusing (FoodExp_base LFoodExp_base HDDS_base)	
+						
+	
+				* Balance Table on baseline characteritics of those that were found
+				
+				preserve
+				
+				* Set all covariates for not found to missing
+				foreach var in 	age female farmer Lrevenu1      							 ///
+								Lrevenu_tot sec_activity married      						 ///
+								hsize schooling      										 ///
+								GGF_member dist_far   										 ///
+								asset_agr_index asset_hh_index 							     ///
+								lanholdings land_cultivated    								 ///
+								FoodExp_base LFoodExp_base HDDS_base	{
+					replace `var' = . 		if found_participant == 0
+					}
+					
+				
+				
+				iebaltab  	found_participant age female farmer Lrevenu1     								 ///
+							Lrevenu_tot sec_activity married       						 ///
+							hsize schooling       										 ///
+							GGF_member dist_far  										 ///
+							asset_agr_index asset_hh_index  							 ///
+							lanholdings land_cultivated   								 ///
+							FoodExp_base LFoodExp_base HDDS_base, 						 ///
+							grpvar(statut) order(1 0)									 ///
+							savetex("$EDLREFOR_outFin/delete_me.tex") 	  				 ///
+							tblnote("") texnotewidth(2)								 	 ///
+							total rowvarlabels pftest   								 ///
+							ftest  fmissok												 ///
+							replace
+				
+				filefilter "$EDLREFOR_outFin/delete_me.tex" "$EDLREFOR_outFin/PES_paper/Balancing_tests_endline.tex",        ///                                                          
+							from("/BShline") to("/BScline{1-8}") replace  	 				
+				restore	
+				
+				
+				
+	
+	* FIGURE 3: DISTRIBUTION OF THE SAMPLE BY FOOD INSECURITY STATUS (HFIAP)
 	
 	
-	
-	
-	
-	
-	
-	
-	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
+				keep if serge1==3	
+						
+						
+			keep if treatment==0			
+			
+			* HOUSEHOLD FOOD INSECURITY ACCESS SCALE
+			global graph_opts_pie bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+							   title(, justification(left) color(black) span pos(11)) subtitle(, justification(left) color(black))		
+				
+			graph pie, over(HFIA_cat) legend(size(small) lpattern(blank)) 			 ///
+						pie(_all, explode) 											 ///
+						pie(1, color(edkblue)) 										 ///
+						pie(2, color(eltgreen)) 									 ///
+						pie(3, color(olive_teal)) 									 ///
+						pie(4, color(erose)) 										  ///				
+						plabel(1 percent,  size(*1) gap(0)  format(%9.2fc) color(black))  ///
+						plabel(2 percent,  size(*1) gap(-5) format(%9.2fc) color(black))  ///
+						plabel(3 percent,  size(*1) gap(0)  format(%9.2fc) color(black))  ///
+						plabel(4 percent,  size(*1) gap(0)  format(%9.2fc) color(black))  ///
+						plabel(1 name,     size(*1) gap(-8) format(%9.2fc) color(black))  	 ///
+						plabel(2 name,     size(*1) gap(10) format(%9.2fc) color(black))  	 ///
+						plabel(3 name,     size(*1) gap(10) format(%9.2fc) color(black))  	 ///
+						plabel(4 name,     size(*1) gap(10) format(%9.2fc) color(black)) 	///
+						title("") legend (off) 	 ///
+						$graph_opts_pie
+						
+			gr export	"$EDLREFOR_outFin/PES_paper/Food_Insecure_HFIApie.eps", replace	
+			
+			
+			
+			
+	* FIGURE 4: (LOG) FOOD CONSUMPTION EXPENDITURES DURING THE PAST 7 DAYS
+			
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3		
+			
+						
+			* Set graph global option 
+			global graph_opts1 bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+							   ylab(,angle(0)) title(, justification(left) color(black) span pos(11)) subtitle(, justification(left) color(black))		
+
+			summ LFoodExp, detail
+						mat b = r(mean)
+						mat c = r(p50)
+						local mean = b[1,1]
+						local mean = round(`=`r(mean)'',0.1)
+						local median = c[1,1]
+						local median = round(`=`r(p50)'',0.1)	
+						di "`mean', `median'"	
+			
+			twoway 		kdensity LFoodExp if statut==1, bwidth(0)   					||	   				///
+						kdensity LFoodExp if statut==0, bwidth(0)  lpattern(dash)		||,	  				///
+						xtitle("Food Expenditure (in FCFA)") 									///
+						ytitle("Density") legend(order(1 "PES" 2 "non-PES"))			///
+						xline(`r(mean)', lpattern(dash) lcolor(maroon))  xmlabel(`r(mean)' "Mean=`mean'",     labsize(vsmall) angle(0)) 	///	
+						xline(`r(p50)' , lpattern(solid) lcolor(navy))   xmlabel(`r(p50)'  "Median=`median'", labsize(vsmall) angle(0)) ///
+						$graph_opts1
+			gr export 	"$EDLREFOR_outFin/PES_paper/kdensity_LOG_FoodConsExp.eps", replace	
+			
+			
+			
+			
+	* TABLE 3: REGRESSION RESULTS: PES AND FOOD CONSUMPTION EXPENDITURES
+			
+			
+					
