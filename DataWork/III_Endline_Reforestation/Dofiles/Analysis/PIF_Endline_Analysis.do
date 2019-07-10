@@ -32,7 +32,17 @@
 */
 
 
+
+
+
+
+****************************
+* SOME BASIC DATA ANALYSIS *
+****************************
+
 if (0)  {
+
+/*
 ********************************************************************************
 * SECTION A:  Identification du participant 			   					   *
 ********************************************************************************
@@ -301,56 +311,6 @@ if (0)  {
 	
 	
 
-	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
-	
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
-		keep if serge1==3		
-	
-	global graph_opts_pie bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
-
-	gen Food_Insecure1 = (1-HFIA_cat_1)*100
-	gen Food_Insecure2 = (HFIA_cat_4)*100
-	
-	*label variable Food_Insecure "Food insecure category of the HFIA scale"
-	label define treatment 0"Non Participants" 1"PES Participants", modify
-	label values treatment treatment
-	*regress Food_Insecure treatment 
-  	regress Food_Insecure1 treatment
-	iegraph treatment , basictitle("Food Insecure")   barlabel noconfbars ///
-						yzero  ylabel(0(10)45 , labsize(small))   ytitle("Percentage", size(medium))  ///
-						legend(order(1 2)  lab(1 "Non Participants")  lab(2 "PES Participants"))  ///
-				graphregion(fcolor(white) ifcolor(white)) $graph_opts_pie  ///
-				plotregion(fcolor(white) ifcolor(white)) scale(*1)	
-		graph rename HFIAS_1, replace		
-		
-		
-  	regress Food_Insecure2 treatment
-	iegraph treatment , basictitle("Severely Food Insecure")   barlabel noconfbars ///
-						yzero  ylabel(0(10)45 , labsize(small))   ytitle("Percentage", size(medium))  ///
-						legend(order(1 2)  lab(1 "Non Participants")  lab(2 "PES Participants"))  ///
-				graphregion(fcolor(white) ifcolor(white)) $graph_opts_pie  ///
-				plotregion(fcolor(white) ifcolor(white)) scale(*1)	
-		graph rename HFIAS_4, replace	
-		
-		
-		
-	* Outsheet both bar graphs	
-	grc1leg HFIAS_1 HFIAS_4, title()  ///
-			subtitle(, size(small)) ///
-			legendfrom(HFIAS_1) graphregion(color(white))  ///
-			note ("Note: Food security categories based on Household Food Insecurity Access Prevelance (HFIAP)" "Bars represent coefficient sizes estimated using OLS regressions", size(small))
-	gr export	"$EDLREFOR_outFin/PES_paper/Food_Insecure_iegraph.eps",  replace	
-	graph drop HFIAS_1 HFIAS_4		
-				
-	
-			
-			
 				
 				
 				
@@ -471,35 +431,7 @@ if (0)  {
 						
 	* FOOD EXPENDITURES STACKED BAR GRAPH	 
 
-	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
 	
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
-		keep if serge1==3		
-
-						
-
-	global graph_opts1 bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
-					   ylab(,angle(0)) subtitle(, justification(left) color(black) span pos(11)) title(, color(black) span)
-	
-	
-	graph bar expfoodgroup*, ///
-			stack over(statut, desc) nofill										    ///
-			ylab(0(5000)15000) 	 blabel(bar, position (center) format(%9.0f) size(tiny))	///												
-			legend(order(1 "Cereals and Tubers" 2 "Pulses" 3 "Vegetables" 4 "Fruit"  5 "Meat and Fish"  6 "Milk" 7 "Oil" 8 "Sugar"  9 "Other") ///
-			c(1) symxsize(small) symysize(small) pos(3) size(small)) ///				
-			$graph_opts1  															///																						
-			bar(1,lw(thin) lc(black) fcolor(edkblue*0.9))  			bar(2,lw(thin) lc(black)  fcolor(edkblue*0.8))  		///
-			bar(3,lw(thin) lc(black) fcolor(edkblue*0.7))  			bar(4,lw(thin) lc(black)  fcolor(edkblue*0.6))		///
-			bar(5,lw(thin) lc(black) fcolor(edkblue*0.5)) 			bar(6,lw(thin) lc(black)  fcolor(edkblue*0.4)) 		///  
-			bar(7,lw(thin) lc(black) fcolor(edkblue*0.3))   		bar(8,lw(thin) lc(black)  fcolor(edkblue*0.2))		///  
-			bar(9,lw(thin) lc(black) fcolor(edkblue*0.1))																																	
-	gr export 	"$EDLREFOR_outFin/PES_paper/FoodConsExp_byfoodgroup_stack.eps",  replace		
 						
 
 						
@@ -509,43 +441,7 @@ if (0)  {
 						
 	* DIETARY DIVERSITY SCALE
 	
-	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
-	
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
-		keep if serge1==3		
-			
-	
-	* Global with options
-	global graph_opts_hdds bgcolor(white)  legend(region(lc(none) )) title(, color(black) span)
-					    
 
-	
-	* Histogram
-	preserve
-	replace statut = 2		if statut == 0
-	
-	label def staut_fix 1 "PES" 2 "non-PES"
-	label val statut staut_fix
-	
-	
-	hist HDDS, by(statut, legend(off) bgcolor(white) graphregion(color(white)) graphregion(color(white)) note("") ) ///
-							 subtitle(,  fcolor(white) lcolor(white)) 						///
-							 percent addlabel  width(1) start(1)   ylab(,angle(0) )	///
-							 addlabopts(yvarformat(%9.0f))  ylabel(0(10)40)   				///
-							 ytitle("Share of the respondents (in %)")   					///
-							 xtitle("HDDS") 									///									
-							 lstyle(solid)  color(edkblue*0.9)
-	gr export 	"$EDLREFOR_outFin/PES_paper/DiversiteAlimentaire.eps",  replace								
-					
-	restore			
-	
-	
 		
 		
 		
@@ -569,109 +465,7 @@ if (0)  {
 		
 		
 		
-		
-* ------------------------------------------------------------------------------
-*	COMPLIANCE ANALYSIS - PAIEMENTS RECEIVED
-* ------------------------------------------------------------------------------
-	
-	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
-		drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
-		keep if serge1==3	
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
-																												rev_total_12mois b10 b11 sec_occup ///
-																												b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
-		keep if serge2==3			
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(b21 b22 W01_b22 W03_b22 W05_b22) gen(serge3)
-		keep if serge3==3
-		
-		
-		*adding baseline info 
-		
-		merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
-				  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
-							Wrevenu_tot Lrevenu_tot sec_activity married       ///
-							monogamous polygamous hsize chief schooling       ///
-							GGF_member dist_far motor) 
-						drop _merge
-							
-		merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
-				 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
-							asset_agr_index asset_hh_index asset_live_index)
-						drop _merge
-		
-		merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
-				  keepusing(lanholdings land_cultivated)
-						drop _merge
-						
-		merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
-				  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
-						drop _merge
-		
-		merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
-				  keepusing (paiement_actual)
-				  mvencode paiement_actual, mv(0) override
-				  keep if treatment!=.
-				  drop _merge
-		
-	
-	
-	graph bar b21,     			over(treatment)
-	
-	graph box b22,     			over(treatment)
-	
-	graph box W01_b22, 			over(treatment)
-	
-	graph box paiement_actual, 	over(treatment)    ///
-					title("Compliance to the treatment assignment", size(large)) ///	
-					ytitle("Paiement amounts (in FCFA)", size(medium))    ///
-						graphregion(fcolor(white) ifcolor(white)) ///
-						plotregion(fcolor(white) ifcolor(white)) scale(*1) ///
-						name(paimentgraph)		
-	graph export "$EDLREFOR_outFin/PES_paper/paiementrecu.eps", replace
-	graph drop paimentgraph							
-	
 
-		summ b22, detail
-				mat b = r(mean)
-				local mean_SR = b[1,1]
-				local mean_SR = round(`=`r(mean)'',0.2)				
-		summ paiement_actual, detail
-				mat c = r(mean)
-				local mean_actual = c[1,1]
-				local mean_actual = round(`=`r(mean)'',0.2)	
-						di "`mean_SR', `mean_actual'"	
-						
-						
-						
-	/* Exclude - Not in the paper					
-		*graph drop paimentgraph							
-		twoway	(kdensity b22 if treatment==1,  lcolor(blue) lwidth(medthick) xaxis(1 2)) ///
-				(kdensity paiement_actual if treatment==1,  lcolor(red) lwidth(medthick) xaxis(1 2)), ///
-					title("Compliance to the treatment assignment", size(large)) ///
-					subtitle("Distribution of paiements received by treatment and control farmers", size(medium)) ///
-					xlabel(, labsize(small) axis(1))  xlabel("", labsize(small) axis(2)) ///
-					ylabel(, labsize(small)) legend(order(1 "Self-reported paiement received" 2 "Actual paiements transfers from monitoring data") row(2))			///
-					xtitle("Montant (FCFA)", size(small)) 			///
-					ytitle("Densite", size(medium))    ///
-					/// xline(`mean_SR', lpattern(dash) lcolor(edkblue)) ///
-					/// xmlabel(`r(mean)' "Moyenne = `mean_actual' FCFA", axis(2) labsize(vsmall) angle(0)) ///
-						graphregion(fcolor(white) ifcolor(white)) ///
-						plotregion(fcolor(white) ifcolor(white)) scale(*1) ///
-						name(paimentgraph)	
-	 graph export "$EDLREFOR_outFin/PES_paper/paiement_recu.eps", replace
-
-	*/
-	
-	
 	
 	
 * ------------------------------------------------------------------------------
@@ -1560,18 +1354,13 @@ if (0)  {
 	use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionG_construct.dta", clear	
 	
 	
-	
-	
-	
-	
-	
-	
-	
+*/
 	
 }
 *	
-	
-	
+
+
+
 	
 	
 ********************************************************************************
@@ -1846,4 +1635,1073 @@ if (0)  {
 	* TABLE 3: REGRESSION RESULTS: PES AND FOOD CONSUMPTION EXPENDITURES
 			
 			
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override		
+				
+			
+			
+			
+			local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+			
+			local base_outcome 	 "FoodExp_base LFoodExp_base HDDS_base"
+			
+			lab var treatment "PES"
+			
+			
+			gen FoodExp2  = FoodExp/hsize
+			gen LFoodExp2 = log(FoodExp2)
+
+			
+			eststo clear
+				
+			foreach var in  FoodExp LFoodExp	{
+				
+			preserve
+			
+			gen 		   baseline_outcome = `var'_base
+			
+			lab var  	   baseline_outcome "Baseline outcome"
+			
+			reg `var' treatment  i.bloc i.parcelle
+			eststo 	`var'_1
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"
+			
+			reg `var' treatment baseline_outcome  i.bloc i.parcelle
+			eststo  `var'_2
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"		
+
+			reg `var' treatment baseline_outcome  i.bloc i.parcelle `covariates'
+			eststo  `var'_3
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"
+			
+			ttest `var', by(treatment)
+				estadd scalar T_obs  = r(N_2)
+				estadd scalar T_mean = r(mu_2)
+				estadd scalar C_obs  = r(N_1)
+				estadd scalar C_mean = r(mu_1)	
+				
+			if `var' == LFoodExp {
+			
+			esttab  ///
+						using "$EDLREFOR_outFin/PES_paper/Food_exp_regression.tex", ///
+						/// s(C_obs T_obs C_mean, fmt(0 0 1))  ///
+						prehead("\begin{tabular}{l*{7}{c}} \hline\hline  \\ & \multicolumn{3}{c}{Food Expenditures} & \multicolumn{3}{c}{log(Food Expenditures)} \\  \cmidrule(lr){2-4} \cmidrule(lr){5-7} ") ///
+						nomtitles drop(*bloc *parcelle `covariates')	star(* 0.10 ** 0.05 *** 0.01)  ///
+						scalars("Controls Covariates included" "Bloc Bloc fixed effects" "C_mean Control mean") sfmt(0) ///
+						addnotes("The baseline outcomes represent respectively the food expenditure and log-food expenditure at baseline."	///
+								 "The covariates include age, gender, occupation, landholdings, revenue, size of the household," 			///
+								 "education, distance to the reforestation site, and memnership of a forest membership group.")				///
+						label r2 ar2 constant  																								///
+						replace
+			}
+			restore
+			
+			}		
+			*
+
+			
+			
+	* TABLE 4: IV REGRESSION RESULTS: PES AND FOOD CONSUMPTION EXPENDITURES
+			
+			
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override		
+				
+			
+			
+			
+			local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+			
+			local base_outcome 	 "FoodExp_base LFoodExp_base HDDS_base"
+			
+			lab var treatment "PES"
+			
+			
+			gen FoodExp2  = FoodExp/hsize
+			gen LFoodExp2 = log(FoodExp2)
+
+			
+			gen paiement_actual1=paiement_actual/100
+			label variable paiement_actual1 "PES tranfers received (in 100 FCFA)"
+			
+			eststo clear
+			
+			foreach var in  FoodExp LFoodExp	{
+			
+			preserve
+			
+			gen 		   baseline_outcome = `var'_base
+			
+			lab var  	   baseline_outcome "Baseline outcome"
+			
+			ivregress 2sls `var' i.bloc i.parcelle  (paiement_actual1 = treatment)
+			eststo 	`var'_1
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"
+			
+			ivregress 2sls `var' baseline_outcome i.bloc i.parcelle  (paiement_actual1 = treatment)
+			eststo  `var'_2
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"		
+
+			ivregress 2sls `var' baseline_outcome i.bloc i.parcelle `covariates' (paiement_actual1 = treatment)
+			eststo  `var'_3
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"
+			
+			ttest `var', by(treatment)
+				estadd scalar T_obs  = r(N_2)
+				estadd scalar T_mean = r(mu_2)
+				estadd scalar C_obs  = r(N_1)
+				estadd scalar C_mean = r(mu_1)	
+				
+			if `var' == LFoodExp {
+			
+			esttab  ///
+						using "$EDLREFOR_outFin/PES_paper/Food_exp_IVregression.tex", ///
+						/// s(C_obs T_obs C_mean, fmt(0 0 1))  ///
+						prehead("\begin{tabular}{l*{7}{c}} \hline\hline  \\ & \multicolumn{3}{c}{Food Expenditures} & \multicolumn{3}{c}{log(Food Expenditures)} \\  \cmidrule(lr){2-4} \cmidrule(lr){5-7} ") ///
+						nomtitles drop(*bloc *parcelle `covariates')	star(* 0.10 ** 0.05 *** 0.01)  ///
+						scalars("Controls Covariates included" "Bloc Bloc fixed effects" "C_mean Control mean") sfmt(0) ///
+						addnotes("The baseline outcomes represent respectively the food expenditure and log-food expenditure at baseline."	///
+								 "The covariates include age, gender, occupation, landholdings, revenue, size of the household," 			///
+								 "education, distance to the reforestation site, and memnership of a forest membership group.")				///
+						label r2 ar2 constant  																								///
+						replace
+			}
+			restore
+			
+			}	
+			*
+			
+			
+			
+	* FIGURE 5: AVERAGE FOOD EXPENDITURES BY FOOD GROUPS
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3		
+
+								
+
+			global graph_opts1 bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+							   ylab(,angle(0)) subtitle(, justification(left) color(black) span pos(11)) title(, color(black) span)
+			
+			
+			graph bar expfoodgroup*, ///
+					stack over(statut, desc) nofill										    ///
+					ylab(0(5000)15000) 	 blabel(bar, position (center) format(%9.0f) size(tiny))	///												
+					legend(order(1 "Cereals and Tubers" 2 "Pulses" 3 "Vegetables" 4 "Fruit"  5 "Meat and Fish"  6 "Milk" 7 "Oil" 8 "Sugar"  9 "Other") ///
+					c(1) symxsize(small) symysize(small) pos(3) size(small)) ///				
+					$graph_opts1  															///																						
+					bar(1,lw(thin) lc(black) fcolor(edkblue*0.9))  			bar(2,lw(thin) lc(black)  fcolor(edkblue*0.8))  		///
+					bar(3,lw(thin) lc(black) fcolor(edkblue*0.7))  			bar(4,lw(thin) lc(black)  fcolor(edkblue*0.6))		///
+					bar(5,lw(thin) lc(black) fcolor(edkblue*0.5)) 			bar(6,lw(thin) lc(black)  fcolor(edkblue*0.4)) 		///  
+					bar(7,lw(thin) lc(black) fcolor(edkblue*0.3))   		bar(8,lw(thin) lc(black)  fcolor(edkblue*0.2))		///  
+					bar(9,lw(thin) lc(black) fcolor(edkblue*0.1))																																	
+			gr export 	"$EDLREFOR_outFin/PES_paper/FoodConsExp_byfoodgroup_stack.eps",  replace	
+			
+			
+			
+			
+			
+	* FIGURE 6: DISTRIBUTION OF HOUSEHOLD DIETARY DIVERSITY SCORE (HDDS) BY PES PARTICIPANTS AND NON-PARTICIPANTS
+			
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3		
 					
+			
+			* Global with options
+			global graph_opts_hdds bgcolor(white)  legend(region(lc(none) )) title(, color(black) span)
+								
+
+			
+			* Histogram
+			preserve
+			replace statut = 2		if statut == 0
+			
+			label def staut_fix 1 "PES" 2 "non-PES"
+			label val statut staut_fix
+			
+			
+			hist HDDS, by(statut, legend(off) bgcolor(white) graphregion(color(white)) graphregion(color(white)) note("") ) ///
+									 subtitle(,  fcolor(white) lcolor(white)) 						///
+									 percent addlabel  width(1) start(1)   ylab(,angle(0) )	///
+									 addlabopts(yvarformat(%9.0f))  ylabel(0(10)40)   				///
+									 ytitle("Share of the respondents (in %)")   					///
+									 xtitle("HDDS") 									///									
+									 lstyle(solid)  color(edkblue*0.9)
+			gr export 	"$EDLREFOR_outFin/PES_paper/DiversiteAlimentaire.eps",  replace								
+							
+			restore			
+			
+			
+			
+				
+	* TABLE 5: REGRESSIONS RESULTS: HDDS
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override
+							gen paiement_actual1=paiement_actual/100
+							label variable paiement_actual1 "PES tranfers received (in 100 FCFA)"		
+							
+			
+			
+			local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+			
+			local base_outcome 	 "FoodExp_base LFoodExp_base HDDS_base"
+			
+			label var treatment "PES"
+			
+			
+			
+			eststo clear
+			
+			
+			foreach var in  HDDS	{
+			
+			preserve
+			
+			gen 		   baseline_outcome = `var'_base
+			
+			label variable baseline_outcome  "HDDS at baseline"
+			
+			reg `var' treatment  i.bloc i.parcelle
+			eststo 	`var'_1
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"
+			estadd	local estimation	"OLS"
+			
+			
+			reg `var' treatment baseline_outcome  i.bloc i.parcelle
+			eststo  `var'_2
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"		
+			estadd	local estimation	"OLS"
+
+			reg `var' treatment baseline_outcome  i.bloc i.parcelle `covariates'
+			eststo  `var'_3
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"
+			estadd	local estimation	"OLS"
+
+			ivregress 2sls `var' baseline_outcome i.bloc i.parcelle `covariates' (paiement_actual1 = treatment)
+			eststo  `var'_4
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"	
+			estadd	local estimation	"IV"
+			
+			ttest `var', by(treatment)
+				estadd scalar T_obs  = r(N_2)
+				estadd scalar T_mean = r(mu_2)
+				estadd scalar C_obs  = r(N_1)
+				estadd scalar C_mean = r(mu_1)		
+			
+			esttab  ///
+						using "$EDLREFOR_outFin/PES_paper/HDDS_RegResults.tex", 		///	
+						/// s(C_obs T_obs C_mean, fmt(0 0 1))  ///
+						/// prehead("\begin{tabular}{l*{7}{c}} \hline\hline  \\ & \multicolumn{3}{c}{Food Expenditures} & \multicolumn{3}{c}{log(Food Expenditures)} \\  \cmidrule(lr){2-4} \cmidrule(lr){5-7} ") ///
+						nomtitles drop(*bloc *parcelle `covariates')	star(* 0.10 ** 0.05 *** 0.01)  ///
+						scalars("Controls Covariates included" "Bloc Bloc fixed effects" "estimation Estimation approach" "C_mean Control mean") sfmt(0) ///
+						addnotes("The covariates include age, gender, occupation, landholdings, revenue, size of the household," 		///
+								 "education, distance to the reforestation site, and membership of a forest membership group.")		///
+						label r2 ar2 constant  											///
+						replace
+
+			restore
+			
+			}
+			*
+				
+	
+	
+	
+	* TABLE 6: REGRESSIONS RESULTS: HOUSEHOLD FOOD INSECURITY ACCESS SCALE (HFIAS)
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override		
+				
+				
+			
+			local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+			
+			
+			lab var treatment "PES"
+			
+			
+			eststo clear
+				
+
+			foreach lhsVar of varlist HFIAS_score HFIA_cat_1 HFIA_cat_4   {
+				
+			
+			
+				reg `lhsVar' treatment  i.bloc i.parcelle
+				eststo
+				eststo dir
+				estadd	local Controls		"No"
+				estadd	local Bloc			"Yes"
+
+				reg `lhsVar' treatment  i.bloc i.parcelle `covariates'
+				eststo
+				estadd	local Controls		"Yes"
+				estadd	local Bloc			"Yes"
+
+				ttest `lhsVar', by(treatment)
+				estadd scalar T_obs  = r(N_2)
+				estadd scalar T_mean = r(mu_2)
+				estadd scalar C_obs  = r(N_1)
+				estadd scalar C_mean = r(mu_1)	
+				
+				
+			esttab  ///
+						using "$EDLREFOR_outFin/PES_paper/HFIAS.tex", ///	
+						prehead("\begin{tabular}{l*{6}{c}} \hline\hline  \\ & \multicolumn{2}{c}{Overall Scale \in [0,4]} & \multicolumn{2}{c}{Being food secure(0/1)} & \multicolumn{2}{c}{Being severely food insecure(0/1)}\\  \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} ") ///
+						nomtitles drop(*bloc *parcelle `covariates')	star(* 0.10 ** 0.05 *** 0.01)  ///
+						scalars("Controls Covariates included" "Bloc Bloc fixed effects" "C_mean Control mean") sfmt(3) ///
+						addnotes("The control covariates include age, gender, occupation, landholdings, revenue, size of the household, education," 		///
+								 "distance to the reforestation site, and memnership of a forest membership group.")					///
+						label r2 ar2 constant  											///
+						replace
+				
+			}
+			*
+
+			
+	
+	* FIGURE 7: PES AND FOOD SECURITY
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
+				keep if serge1==3		
+			
+			global graph_opts_pie bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+
+			gen Food_Insecure1 = (1-HFIA_cat_1)*100
+			gen Food_Insecure2 = (HFIA_cat_4)*100
+			
+			*label variable Food_Insecure "Food insecure category of the HFIA scale"
+			label define treatment 0"Non Participants" 1"PES Participants", modify
+			label values treatment treatment
+			*regress Food_Insecure treatment 
+			regress Food_Insecure1 treatment
+			iegraph treatment , basictitle("Food Insecure")   barlabel  ///
+								yzero  ylabel(0(10)45 , labsize(small))   ytitle("Percentage", size(medium))  ///
+								legend(order(1 2)  lab(1 "Non Participants")  lab(2 "PES Participants"))  ///
+						graphregion(fcolor(white) ifcolor(white)) $graph_opts_pie  ///
+						plotregion(fcolor(white) ifcolor(white)) scale(*1)	
+				graph rename HFIAS_1, replace		
+				
+				
+			regress Food_Insecure2 treatment
+			iegraph treatment , basictitle("Severely Food Insecure")   barlabel  ///
+								yzero  ylabel(0(10)45 , labsize(small))   ytitle("Percentage", size(medium))  ///
+								legend(order(1 2)  lab(1 "Non Participants")  lab(2 "PES Participants"))  ///
+						graphregion(fcolor(white) ifcolor(white)) $graph_opts_pie  ///
+						plotregion(fcolor(white) ifcolor(white)) scale(*1)	
+				graph rename HFIAS_4, replace	
+				
+				
+				
+			* Outsheet both bar graphs	
+			grc1leg HFIAS_1 HFIAS_4, title()  ///
+					subtitle(, size(small)) ///
+					legendfrom(HFIAS_1) graphregion(color(white))  
+					*note ("Note: Food security categories based on Household Food Insecurity Access Prevelance (HFIAP)" "Bars represent coefficient sizes estimated using OLS regressions", size(small))
+			gr export	"$EDLREFOR_outFin/PES_paper/Food_Insecure_iegraph.eps",  replace	
+			graph drop HFIAS_1 HFIAS_4		
+						
+			
+			
+					
+	* TABLE 7: RANDOMIZED INFERENCE RESULTS: FOOD SECURITY OUTCOMES FOR PES PARTICIPANTS VERSUS NON PARTICIPANTS
+								
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3		
+			
+			
+			tab 		treatment	
+			
+			
+			* drop not found participants
+			tab 		found_participant
+			
+			drop if 	found_participant == 2
+			
+			
+			describe FoodExp LFoodExp HFIAS_score HFIA_cat_1  HFIA_cat_4 HDDS 
+			
+
+										
+			* BALANCE TABLE WITH RITEST
+			
+			do "$EDLREFOR_do/Analysis/iebaltab_ri_MainOutcomes.do"
+			
+			filefilter  "$EDLREFOR_outFin/PES_paper/baltab_ri.tex" "$EDLREFOR_outFin/PES_paper/Food_Consumption_Indices_RITEST.tex",        ///                                                          
+						 from("/BShline") to("/BScline{1-7}") replace  	
+							
+				
+				
+				
+	* FIGURE 8: BONFERRONI MULTIPLE HYPOTHESIS ADJUSTEMENT
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override	
+
+			
+			
+			preserve
+			global graph_rob bgcolor(white) graphregion(color(white)) legend(region(lc(none) fc(none))) ///
+							   xlab(-0.8(0.4)0.8) ylab(,angle(0) nogrid labsize(vsmall)) title(, justification(left) color(black) span pos(11)) subtitle(, justification(left) color(black))		
+			
+			* Ben's approach (Bonferroni)
+			forest reg FoodExp LFoodExp HFIAS_score HFIA_cat_1 ///
+					HFIA_cat_4 HHS HHScat1 HDDS = treatment,  ///
+					controls(i.bloc i.parcelle) d bonferroni  ///
+							graphopts($graph_rob)
+							
+			gr export "$EDLREFOR_outFin/PES_paper/robustness_forest.eps",  replace	
+
+			
+
+			* Kling & Liebman approach
+				replace FoodExp=-FoodExp
+				replace LFoodExp=-LFoodExp
+				replace HFIA_cat_1=1-HFIA_cat_1
+				replace HHScat1=1-HHScat1
+			avg_effect FoodExp LFoodExp HFIAS_score HFIA_cat_1 ///
+					HFIA_cat_4 HHS HHScat1 HDDS, x(treatment) effectvar(treatment) controltest(treatment==0)
+					
+					
+			* Anderson's approach	
+			restore			
+			
+	
+	
+	* FIGURE A.9.: COMPLIANCE ANALYSIS - ACTUAL PAYMENTS RECEIVED BY TREATMENT STATUS
+
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(b21 b22 W01_b22 W03_b22 W05_b22) gen(serge3)
+				keep if serge3==3
+				
+				
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override
+						  keep if treatment!=.
+						  drop _merge
+				
+			
+			
+			*graph bar b21,     			over(treatment)
+			
+			*graph box b22,     			over(treatment)
+			
+			*graph box W01_b22, 			over(treatment)
+			
+			graph box paiement_actual, 	over(treatment)    ///
+							title("Compliance with the treatment assignment", size(large)) ///	
+							ytitle("Paiement amounts (in FCFA)", size(medium))    ///
+								graphregion(fcolor(white) ifcolor(white)) ///
+								plotregion(fcolor(white) ifcolor(white)) scale(*1) ///
+								name(paimentgraph)		
+			graph export "$EDLREFOR_outFin/PES_paper/paiementrecu.eps", replace
+			graph drop paimentgraph							
+			
+
+			
+				/* Exclude - Not in the paper			
+				summ b22, detail
+						mat b = r(mean)
+						local mean_SR = b[1,1]
+						local mean_SR = round(`=`r(mean)'',0.2)				
+				summ paiement_actual, detail
+						mat c = r(mean)
+						local mean_actual = c[1,1]
+						local mean_actual = round(`=`r(mean)'',0.2)	
+								di "`mean_SR', `mean_actual'"	
+								
+								
+								
+							
+				*graph drop paimentgraph							
+				twoway	(kdensity b22 if treatment==1,  lcolor(blue) lwidth(medthick) xaxis(1 2)) ///
+						(kdensity paiement_actual if treatment==1,  lcolor(red) lwidth(medthick) xaxis(1 2)), ///
+							title("Compliance to the treatment assignment", size(large)) ///
+							subtitle("Distribution of paiements received by treatment and control farmers", size(medium)) ///
+							xlabel(, labsize(small) axis(1))  xlabel("", labsize(small) axis(2)) ///
+							ylabel(, labsize(small)) legend(order(1 "Self-reported paiement received" 2 "Actual paiements transfers from monitoring data") row(2))			///
+							xtitle("Montant (FCFA)", size(small)) 			///
+							ytitle("Densite", size(medium))    ///
+							/// xline(`mean_SR', lpattern(dash) lcolor(edkblue)) ///
+							/// xmlabel(`r(mean)' "Moyenne = `mean_actual' FCFA", axis(2) labsize(vsmall) angle(0)) ///
+								graphregion(fcolor(white) ifcolor(white)) ///
+								plotregion(fcolor(white) ifcolor(white)) scale(*1) ///
+								name(paimentgraph)	
+			 graph export "$EDLREFOR_outFin/PES_paper/paiement_recu.eps", replace
+
+			*/
+	
+
+	
+	* TABLE A.8.: BALANCE TABLE: ATTRITED VERSUS NON ATTRITED (ENDLINE) SAMPLE
+	
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", clear
+					drop age female 
+					
+					merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+							  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+										Wrevenu_tot Lrevenu_tot sec_activity married       ///
+										monogamous polygamous hsize chief schooling       ///
+										GGF_member dist_far motor) 
+									drop _merge
+										
+					merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+							keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+										asset_agr_index asset_hh_index asset_live_index)
+									drop _merge
+					
+					merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+							keepusing(lanholdings land_cultivated)
+									drop _merge
+									
+					merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+							keepusing (FoodExp_base LFoodExp_base HDDS_base)
+					
+
+					
+					* Test for Balance Test of attrited vs non-attrited respondents
+					
+					iebaltab  	age female farmer Lrevenu1      							 ///
+								Lrevenu_tot sec_activity married      						 ///
+								hsize schooling      										 ///
+								GGF_member dist_far   										 ///
+								asset_agr_index asset_hh_index 							     ///
+								lanholdings land_cultivated    								 ///
+								FoodExp_base LFoodExp_base HDDS_base, 						 ///
+								grpvar(found_participant) 	texnotewidth(2)					 ///
+								savetex("$EDLREFOR_outFin/delete_me.tex") 	  				 ///
+								tblnote("") order(1 0)										 ///
+								total rowvarlabels pftest replace
+					
+					filefilter "$EDLREFOR_outFin/delete_me.tex" "$EDLREFOR_outFin/PES_paper/Balancing_tests_attrited.tex",        ///                                                          
+								from("/BShline") to("/BScline{1-8}") replace  	 				
+					
+				
+
+				
+	* TABLE A.9.: TREATMENT EFFECTS ON FOOD EXPENDITURE SHARES BY FOOD GROUPS
+	
+				use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+					merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+					drop _merge
+					
+					merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+					drop _merge
+					
+					merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle) gen(serge1)
+					keep if serge1==3	
+					
+				
+					
+				drop foodgroup*
+				
+				forvalues x=1/9  {
+					gen foodgroup`x'=expfoodgroup`x'>0
+				}
+				
+				label variable foodgroup1 "Consume Cereales, Roots, & Tubers (0/1)"
+				label variable foodgroup2 "Consume Pulses (0/1)"
+				label variable foodgroup3 "Consume Vegetables (0/1)"
+				label variable foodgroup4 "Consume Fruits (0/1)"
+				label variable foodgroup5 "Consume Meat & Fish (0/1)"
+				label variable foodgroup6 "Consume Milk Products (0/1)"
+				label variable foodgroup7 "Consume Oil (0/1)"
+				label variable foodgroup8 "Consume Sugar (0/1)"
+				label variable foodgroup9 "Consume Other - Alcohol, Tobacco, & Spices (0/1)"
+				
+				label variable expfoodgroup1 "Expenditures on Cereales, Roots, & Tubers (0/1)"
+				label variable expfoodgroup2 "Expenditures on Pulses (0/1)"
+				label variable expfoodgroup3 "Expenditures on Vegetables (0/1)"
+				label variable expfoodgroup4 "Expenditures on Fruits (0/1)"
+				label variable expfoodgroup5 "Expenditures on Meat & Fish (0/1)"
+				label variable expfoodgroup6 "Expenditures on Milk Products (0/1)"
+				label variable expfoodgroup7 "Expenditures on Oil (0/1)"
+				label variable expfoodgroup8 "Expenditures on Sugar (0/1)"
+				label variable expfoodgroup9 "Expenditures on Other - Alcohol, Tobacco, & Spices (0/1)"
+				
+				
+				iebaltab 	foodgroup* expfoodgroup*, 	///
+							grpvar(treatment) grplabels(1 Treatment @  0 Control)  order(1 0)	///
+							/// vce(cluster a2_site)										///										
+							total rowvarlabels pftest  										///
+							tblnote("") 													///
+							savetex("$EDLREFOR_outFin/delete_me.tex") 						///
+							replace
+
+				filefilter  "$EDLREFOR_outFin/delete_me.tex" "$EDLREFOR_outFin/PES_paper/Food_Consumption_shares.tex",        ///                                                          
+								from("/BShline") to("/BScline{1-8}") replace 	
+								
+								
+								
+	
+	
+	* TABLE A.10.: REGRESSION RESULTS: ELASTICITY OF CONSUMPTION EXPENDITURES PER FOOD GROUPS
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+				drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+				keep if serge1==3	
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																														rev_total_12mois b10 b11 sec_occup ///
+																														b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+				keep if serge2==3			
+				
+			
+				*adding baseline info 
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+						  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+									Wrevenu_tot Lrevenu_tot sec_activity married       ///
+									monogamous polygamous hsize chief schooling       ///
+									GGF_member dist_far motor) 
+								drop _merge
+									
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+						 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+									asset_agr_index asset_hh_index asset_live_index)
+								drop _merge
+				
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+						  keepusing(lanholdings land_cultivated)
+								drop _merge
+								
+				merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+						  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+								drop _merge
+				
+				merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+						  keepusing (paiement_actual)
+						  mvencode paiement_actual, mv(0) override		
+				
+			
+			
+			
+			local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+			
+			local base_outcome 	 "FoodExp_base LFoodExp_base HDDS_base"
+			
+			lab var treatment "PES"
+			
+			
+			gen FoodExp2  = FoodExp/hsize
+			gen LFoodExp2 = log(FoodExp2)
+
+			gen paiement_actual1=paiement_actual/100
+			label variable paiement_actual1 "PES tranfers received (in 100 FCFA)"
+			
+			gen L2FoodExp=asinh(FoodExp)
+			label variable L2FoodExp "IHS tranformed Household Total Food Concumption Expenditures"
+			
+			
+						
+			eststo clear
+
+			foreach var in  expfoodgroup1 expfoodgroup2 expfoodgroup3 expfoodgroup4 expfoodgroup5 expfoodgroup6 expfoodgroup7 expfoodgroup8 expfoodgroup9	{
+			
+			preserve
+			gen L`var'=asinh(`var')
+			
+			ivregress 2sls L`var' i.bloc i.parcelle `covariates' (L2FoodExp = treatment)
+			eststo  `var'_1
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"	
+			
+			ttest `var', by(treatment)
+				estadd scalar T_obs  = r(N_2)
+				estadd scalar T_mean = r(mu_2)
+				estadd scalar C_obs  = r(N_1)
+				estadd scalar C_mean = r(mu_1)	
+				
+			restore
+			}	
+			esttab  ///
+						using "$EDLREFOR_outFin/PES_paper/Foodgroup_exp_IVregression.tex", ///
+						/// s(C_obs T_obs C_mean, fmt(0 0 1))  ///
+						/// prehead("\begin{tabular}{l*{7}{c}} \hline\hline  \\ & \multicolumn{3}{c}{Food Expenditures} & \multicolumn{3}{c}{log(Food Expenditures)} \\  \cmidrule(lr){2-4} \cmidrule(lr){5-7} ") ///
+						nomtitles drop(*bloc *parcelle `covariates')	star(* 0.10 ** 0.05 *** 0.01)  ///
+						scalars("Controls Covariates included" "Bloc Bloc fixed effects" "C_mean Control mean") sfmt(0) ///
+						addnotes("The covariates include age, gender, occupation, landholdings, revenue, size of the household," 			///
+								 "education, distance to the reforestation site, and memnership of a forest membership group.")				///
+						label r2 ar2 constant  																								///
+						replace
+			
+		
+		
+	
+	* TABLE A.11.: REGRESSION RESULTS: HOUSEHOLD HUNGER SCALE (HHS)
+	
+			use "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD_construct.dta", clear	
+			
+			merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD2_construct.dta"
+			drop _merge
+			
+			merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionD3_construct.dta"
+			drop _merge
+			
+			merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionA_construct.dta", keepusing(region site bloc parcelle statut) gen(serge1)
+			keep if serge1==3	
+			
+			merge 1:1 hhid using "$EDLREFOR_dt/Intermediate/Constructed/PIF_Endline_SectionB_construct.dta", keepusing(rev_total_12mois Lrev_total_12mois W01_rev_total_12mois ///
+																													rev_total_12mois b10 b11 sec_occup ///
+																													b21 b22 W01_b22 W03_b22 W05_b22) gen(serge2)
+			keep if serge2==3			
+			
+		
+			*adding baseline info 
+			
+			merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionB_construct.dta", ///
+					  keepusing(age female farmer revenu1 Lrevenu1 revenu_tot       ///
+								Wrevenu_tot Lrevenu_tot sec_activity married       ///
+								monogamous polygamous hsize chief schooling       ///
+								GGF_member dist_far motor) 
+							drop _merge
+								
+			merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionC_construct.dta",  ///
+					 keepusing(assets_agri_sum assets_house_sum assets_livestock_sum  ///
+								asset_agr_index asset_hh_index asset_live_index)
+							drop _merge
+			
+			merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionD_construct.dta",  ///
+					  keepusing(lanholdings land_cultivated)
+							drop _merge
+							
+			merge 1:1 hhid using "$BSLREFOR_dt/Intermediate/SectionE_construct.dta",  ///
+					  keepusing (FoodExp_base LFoodExp_base HDDS_base)		
+							drop _merge
+			
+			merge 1:1 hhid using "$EDLREFOR_dt/final/actual paiement made_analysis.dta",  ///
+					  keepusing (paiement_actual)
+					  mvencode paiement_actual, mv(0) override	
+			
+		
+		lab var HHS  		"HHS"
+		lab var HHScat1		"HHS (no hunger)"
+		lab var HHScat2		"HHS (moderate hunger)"
+		
+		
+		
+		local covariates     "age female farmer lanholdings Lrevenu_tot sec_activity married hsize schooling GGF_member dist_far"
+		
+		local base_outcome 	 "FoodExp_base LFoodExp_base HDDS_base"
+		
+		lab var treatment "PES"
+		
+		eststo clear
+
+		foreach lhsVar of varlist  HHS HHScat1 HHScat2  {
+			
+		
+		
+			reg `lhsVar' treatment  i.bloc i.parcelle
+			eststo
+			eststo dir
+			estadd	local Controls		"No"
+			estadd	local Bloc			"Yes"
+
+			reg `lhsVar' treatment  i.bloc i.parcelle `covariates'
+			eststo
+			estadd	local Controls		"Yes"
+			estadd	local Bloc			"Yes"
+
+			
+			esttab  ///
+					using "$EDLREFOR_outFin/PES_paper/HHS_regressions.tex", ///	
+					prehead("\begin{tabular}{l*{6}{c}} \hline\hline  \\ & \multicolumn{2}{c}{Scale \in [0,3]} & \multicolumn{2}{c}{Scale = 1 (no hunger)} & \multicolumn{2}{c}{Scale = 2 (moderate hunger)}\\  \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} ") ///
+					nomtitles drop(*bloc *parcelle `covariates' )	  ///
+					scalars("Controls Controls " "Bloc Bloc fixed effects") ///
+					addnotes("The control covariates include age, gender, occupation, landholdings, revenue, size of the household, education," 		///
+							 "distance to the reforestation site, and memnership of a forest membership group.")									    ///
+					label r2 ar2 constant  											///
+					replace
+		}
+				

@@ -62,7 +62,7 @@
 
 	   
 	   
-	   
+	   *set varabbrev on
 	   
 	   
 *iefolder*1*FolderGlobals*******************************************************
