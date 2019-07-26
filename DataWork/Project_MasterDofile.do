@@ -91,9 +91,9 @@
             }
 	*
 	if c(username)=="sergeadjognon" {
-            global projectfolder "/Volumes/My Passport for Mac/CloudDocs/Dropbox/World Bank projects/PROJECTS/1-BURKINA FORESTRY"
+            global projectfolder "/Users/sergeadjognon/Documents/GitHub/PESandFoodSecurity"
             }
-	*	
+	*
 	
 	if c(username)=="ALEXIS" {
             global projectfolder "~/Dropbox/DataWork/I_RemoteSensing"
