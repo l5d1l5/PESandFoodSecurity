@@ -2376,8 +2376,18 @@ if (0)  {
 								plotregion(fcolor(white) ifcolor(white)) scale(*1) ///
 								name(paimentgraph)		
 			graph export "$EDLREFOR_outFin/PES_paper/paiementrecu.eps", replace
-			graph drop paimentgraph							
+			graph drop paimentgraph			
 			
+			keep if treatment==1					
+			hist paiement_actual, legend(off) bgcolor(white) graphregion(color(white)) graphregion(color(white)) note("") ///
+									 subtitle(,  fcolor(white) lcolor(white)) 						///
+									 percent   bin(10)   ylab(,angle(0) )	///
+									 ytitle("Share of respondents (in %)")   					///
+									 xtitle("Actual paiements received (FCFA)") 									///									
+									 lstyle(solid)  color(edkblue*0.9)	///
+									name(paimentgraph_hist)										 
+			graph export "$EDLREFOR_outFin/PES_paper/paiementrecu_hist.eps", replace
+			graph drop paimentgraph_hist					
 
 			
 				/* Exclude - Not in the paper			
